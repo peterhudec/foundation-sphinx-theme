@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+{% set script_files = script_files + ['_static/js/vendor/custom.modernizr.js'] %}
+
+{%- macro script() %}
+    {%- for scriptfile in script_files %}
+    	<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+{%- endmacro %}
+
+{%- macro css() %}
+    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+    
+    {%- for cssfile in css_files %}
+    	<link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {%- endfor %}
+    
+    <link rel="stylesheet" href="{{ pathto('_static/css/normalize.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/css/foundation.min.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/css/' + style, 1) }}" type="text/css" />
+    
+    {% if theme_css_theme %}
+    	<link rel="stylesheet" href="{{ pathto('_static/css/themes/' + theme_css_theme + '.css', 1) }}" type="text/css" />
+    {% endif  %}
+    
+{%- endmacro %}
+
+{%- macro breadcrumbs() %}
+	{% if next and prev %}
+		<ul class="breadcrumbs">
+			{# Home #}
+		  	<li><a href="{{ pathto(master_doc) }}">{{ docstitle }}</a></li>
+
+		  	{# Parents #}
+		  	{%- for parent in parents %}
+		  		<li><a href="{{ parent.link|e }}">{{ parent.title }}</a></li>
+		  	{%- endfor %}
+
+		  	{# Current #}
+			<li class="current"><a href="">{{ title }}</a></li>
+		</ul>
+	{% endif %}
+{%- endmacro %}
+
+{%- macro nav_appendix() %}
+	<li class="divider"></li>
+
+	{% if prev %}
+		<li><a href="{{ prev.link|e }}"  title="{{ prev.title }}">&laquo; previous</a></li>
+	{% endif %}
+
+	{%- for rellink in rellinks %}
+		{% if rellink[3] not in ('next', 'previous') %}
+			<li><a href="{{ pathto(rellink[0]) }}"  title="{{ rellink[1]|striptags|e }}">{{ rellink[3] }}</a></li>
+		{% endif %}
+	{%- endfor %}
+
+	{% if next %}
+		<li><a href="{{ next.link|e }}"  title="{{ next.title }}">next &raquo;</a></li>
+	{% endif %}
+
+{%- endmacro %}
+
+{%- macro logo() %}
+<div>
+	<a href="{{ pathto(master_doc) }}">
+	{% if theme_logo_screen %}
+    	{% if theme_logo_mobile %}
+    		<img id="logo" class="hide-for-small" src="{{ pathto('_static/' + theme_logo_screen, 1) }}" />
+    		<img id="logo-mobile" class="show-for-small" src="{{ pathto('_static/' + theme_logo_mobile, 1) }}" />
+    	{% else %}
+    		<img id="logo" src="{{ pathto('_static/' + theme_logo_screen, 1) }}" />
+    	{% endif %}
+	{% else %}
+    	<h1 id="logo">{{ docstitle }}</h1>
+	{% endif %}
+	</a>
+</div>
+{% endmacro -%}
+
+{% block doctype %}
+<!DOCTYPE html>
+{% endblock %}
+
+{% block html_open %}
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+{% endblock %}
+
+{% block html_head %}
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>{{ docstitle|striptags|e }}</title>
+
+	{{ css() }}
+
+    {%- if not embedded %}
+    	{{ script() }}
+    {%- endif %}
+
+</head>
+{% endblock %}
+
+{% block html_body %}
+<body>
+	{%- block root -%}
+	<div id="root">
+		{%- block nav_bar -%}
+		<div class="contain-to-grid">
+			<nav class="top-bar">
+				<ul class="title-area">
+					<li class="name">
+					  <h1><a href="{{ pathto(master_doc) }}">{{ docstitle }}</a></h1>
+					</li>
+					<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+				</ul>
+				 
+				<section class="top-bar-section">
+					<ul class="left"><li class="divider"></li></ul>
+					{% if theme_top_bar_force_fit %}
+						<ul>
+							<li class="has-dropdown">
+								<a href="">{{ theme_top_bar_content_title }}</a>
+								{{ tt2nav(toctree(collapse=False), klass='dropdown') }}
+							</li>
+						</ul>
+					{% else %}
+						{{ tt2nav(toctree(collapse=False)) }}
+					{% endif %}
+					<ul class="left">
+						{{ nav_appendix() }}
+					</ul>
+				</section>
+			</nav>
+		</div>
+		{%- endblock -%}
+		{%- block header -%}
+		<div id="header">
+			<div class="row">
+				{% if theme_motto %}
+		        <div id="logo-container" class="large-6 columns">
+		        	{{ logo() }}
+		        </div>
+		        <div class="large-6 columns">
+		            <p id="motto">
+						{{ theme_motto }}
+					</p>
+		        </div>
+		        {% else %}
+		        	{{ logo() }}
+		        {% endif %}
+		    </div>
+	    </div>
+		{% endblock %}
+		
+		{% block breadcrumbs %}
+		<div class="row">{{ breadcrumbs() }}</div>
+		{% endblock %}
+		
+		<div class="row">
+			{% block content %}
+			<div id="content" class="large-9 push-3 columns">
+				{% block body %}{% endblock %}
+			</div>
+			{% endblock %}
+			
+			{% block navigation %}
+			<div id="navigation" class="large-3 pull-9 columns">
+				{{ toctree(collapse=False) }}
+			</div>
+			{% endblock %}
+		</div>
+		
+		<div id="root_footer"></div>
+	</div>
+	{%- endblock -%}
+	
+	{%- block footer -%}
+	<div id="footer">
+		<div class="row">
+	    {%- if show_copyright %}
+		    {%- if hasdoc('copyright') %}
+		        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+		    {%- else %}
+		        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+		    {%- endif %}
+	    {%- endif %}
+	    {%- if last_updated %}
+	        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+	    {%- endif %}
+	    {%- if show_sphinx %}
+	        {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+	    {%- endif %}
+	    </div>
+	</div>
+	{%- endblock -%}
+	<script>
+		document.write('<script src=' +
+		('__proto__' in {} ? '{{ pathto('_static', 1) }}/js/vendor/zepto' : 'js/vendor/jquery') +
+		'.js><\/script>')
+	</script>
+	<script src="{{ pathto('_static/js/foundation.min.js', 1) }}"></script>
+	<script src="{{ pathto('_static/js/foundation/foundation.topbar.js', 1) }}"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	<script>
+		/**
+		 * Fallback svg to png.
+		 * Taken from Todd Motto's article:
+		 * http://toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script/
+		 */
+		if(!Modernizr.svg) {
+		    $('img[src*="svg"]').attr('src', function() {
+		        return $(this).attr('src').replace('.svg', '.png');
+		    });
+		}
+		
+		// Reset width of all table columns.
+		$('col').attr('width', null);
+		
+		// Add "returns" class to all returns elements
+		$(".field-name:contains('Returns:')").parent().addClass('returns')
+	</script>
+</body>
+{% endblock %}
+</html>

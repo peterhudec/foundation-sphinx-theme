@@ -1,0 +1,41 @@
+/**
+ *   Dark variant of the Cards Foundation Sphinx Theme css theme.
+ */
+
+// Body text, page header and footer background, object and table headers background.
+$color-1: #EBE7E1 !default
+
+// Page header and footer text and objec headers text.
+$color-2: #4A4640 !default
+
+// Object body, topic, footnotes, top bar, breadcrumbs, tables and sidebar background.
+$color-3: darken($color-2, 5%) !default
+
+// Body and function/method parameters background.
+$color-4: darken($color-3, 5%) !default
+
+// Function/method returns body background and header text, method border.
+$color-5: lighten($color-2, 5%)
+
+$topbar-bg: $color-4 !default
+$table-odd-body-bg: lighten($color-3, 2%) !default
+
+// Note and Hint admonitions
+$admonition-1-header-bg: rgb(201, 152, 0) !default
+$admonition-1-header-fg: $color-1 !default
+$admonition-1-body-bg: rgb(230, 217, 122) !default
+$admonition-1-body-fg: $color-2 !default
+
+// See Also and Tip admonitions
+$admonition-2-header-bg: #72C257 !default
+$admonition-2-header-fg: $admonition-1-header-fg !default
+$admonition-2-body-bg: #DEFFD4 !default
+$admonition-2-body-fg: $admonition-1-body-fg !default
+
+// Attention, Danger, Error, Warning and Important admonitions
+$admonition-3-header-bg: rgb(182, 0, 73) !default
+$admonition-3-header-fg: $admonition-1-header-fg !default
+$admonition-3-body-bg: rgb(214, 136, 167) !default
+$admonition-3-body-fg: $admonition-1-body-fg !default
+
+@import 'cards'

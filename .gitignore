@@ -1,0 +1,8 @@
+*.class
+*.pyc
+*.pyo
+.project
+.pydevproject
+.settings
+build/
+sample_project/build
