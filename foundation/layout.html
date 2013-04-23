@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 {% set script_files = script_files + ['_static/js/vendor/custom.modernizr.js'] %}
+{% set stylesheet = theme_stylesheet or 'basic' %}
 
 {%- macro script() %}
     {%- for scriptfile in script_files %}
@@ -16,13 +17,7 @@
     	<link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
     {%- endfor %}
     
-    <link rel="stylesheet" href="{{ pathto('_static/css/normalize.css', 1) }}" type="text/css" />
-    <link rel="stylesheet" href="{{ pathto('_static/css/foundation.min.css', 1) }}" type="text/css" />
-    <link rel="stylesheet" href="{{ pathto('_static/css/' + style, 1) }}" type="text/css" />
-    
-    {% if theme_css_theme %}
-    	<link rel="stylesheet" href="{{ pathto('_static/css/themes/' + theme_css_theme + '.css', 1) }}" type="text/css" />
-    {% endif  %}
+    <link rel="stylesheet" href="{{ pathto('_static/css/' + stylesheet + '.css', 1) }}" type="text/css" />
     
 {%- endmacro %}
 
@@ -180,21 +175,39 @@
 	
 	{%- block footer -%}
 	<div id="footer">
-		<div class="row">
-	    {%- if show_copyright %}
-		    {%- if hasdoc('copyright') %}
-		        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-		    {%- else %}
-		        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+		{%- block bottom_nav -%}
+		<div id="bottom-nav">
+			{%- if prev -%}
+				<span><a href="{{ prev.link|e }}"  title="{{ prev.title }}">&laquo; previous</a></span>
+			{% endif -%}
+			{%- for rellink in rellinks -%}
+				{%- if rellink[3] not in ('next', 'previous') -%}
+					<span><a href="{{ pathto(rellink[0]) }}"  title="{{ rellink[1]|striptags|e }}">{{ rellink[3] }}</a></span>
+				{% endif -%}
+			{%- endfor %}
+			{%- if next -%}
+				<span><a href="{{ next.link|e }}"  title="{{ next.title }}">next &raquo;</a></span>
+			{%- endif -%}
+		</div>
+		{%- endblock -%}
+		
+		{%- block footer_notice -%}
+		<div id="footer-notice">
+		    {%- if show_copyright %}
+			    {%- if hasdoc('copyright') %}
+			        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+			    {%- else %}
+			        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+			    {%- endif %}
 		    {%- endif %}
-	    {%- endif %}
-	    {%- if last_updated %}
-	        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-	    {%- endif %}
-	    {%- if show_sphinx %}
-	        {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
-	    {%- endif %}
+		    {%- if last_updated %}
+		        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+		    {%- endif %}
+		    {%- if show_sphinx %}
+		        {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+		    {%- endif %}
 	    </div>
+	    {%- endblock -%}
 	</div>
 	{%- endblock -%}
 	<script>
@@ -206,8 +219,7 @@
 	<script src="{{ pathto('_static/js/foundation/foundation.topbar.js', 1) }}"></script>
 	<script>
 		$(document).foundation();
-	</script>
-	<script>
+		
 		/**
 		 * Fallback svg to png.
 		 * Taken from Todd Motto's article:
@@ -224,6 +236,18 @@
 		
 		// Add "returns" class to all returns elements
 		$(".field-name:contains('Returns:')").parent().addClass('returns')
+		
+		{% if theme_google_analytics_id and theme_google_analytics_domain %}
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', '{{ theme_google_analytics_id }}']);
+		_gaq.push(['_setDomainName', '{{ theme_google_analytics_domain }}']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		{% endif %}
 	</script>
 </body>
 {% endblock %}

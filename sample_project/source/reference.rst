@@ -2,7 +2,7 @@
 Reference
 =========
 
-Lorem ipsum dolor sit amet, magna offendit similique ne nec.
+Lorem ipsum dolor sit amet, ``magna offendit`` similique ne nec.
 Ex doming sanctus labores pro, est ne dico simul laboramus.
 Eam ad sint accumsan percipitur, dicta ubique expetendis ne sed.
 Cu ipsum percipit electram sed. Per recusabo convenire definiebas an.
@@ -13,19 +13,19 @@ Functions
 
 .. function:: foo(bar, baz=None)
    
-   Lorem ipsum dolor sit amet, magna offendit similique ne nec.
+   Lorem ipsum dolor sit amet, ``magna offendit`` similique ne nec.
    Ex doming sanctus labores pro, est ne dico simul laboramus.
    
    .. note::
    
-      Admonition inside function docstring.
+      Admonition ``inside`` function docstring.
    
    :param str bar:
       Lorem ipsum dolor sit amet, magna offendit similique ne nec.
       
       .. tip::
       
-         Admonition inside function parameters comment.
+         Admonition inside ``function`` parameters comment.
    
    :param bool baz:
       Ex doming sanctus labores pro, est ne dico simul laboramus.
@@ -42,7 +42,7 @@ Functions
       Lorem ipsum dolor sit amet, magna offendit similique ne nec.
    
    :returns:
-      Eam ad sint accumsan percipitur, dicta ubique expetendis ne sed.
+      Eam ad sint accumsan ``percipitur``, dicta ubique expetendis ne sed.
 
 Classes
 =======

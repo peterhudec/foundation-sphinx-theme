@@ -1,13 +1,10 @@
-
-
-
 $padding: 1.25em
 $padding-2: 0.75em
 $margin: 1.25em
 $margin-2: 0.9375em
 
 @import "compass/layout"
-@include sticky-footer($margin * 3)
+@include sticky-footer($margin * 6)
 
 // Resets
 .top-bar
@@ -16,29 +13,26 @@ $margin-2: 0.9375em
 .field-even, .xref, .label
   background-color: transparent
 
-ul:not(.dropdown)
-  padding-left: $padding
-
 // Break all on mobile
 dt, li
   word-break: break-all
 
 
 // Margins and paddings
-.highlight, .topic, .contents, .sidebar, .epigraph, #footer, .admonition, #content ul, #content ol
-  padding: $padding !important
+.highlight, .topic, .contents, .sidebar, .epigraph, .admonition, #content ul, #content ol
+  padding: $padding //!important
 
 .highlight, .topic, .contents, .sidebar, .epigraph, .admonition, #content div>ul, #content div>ol
   margin-bottom: $margin !important
 
 
-#header, #footer
+#header, #footer-notice
   background-color: #f2f2f2
   text-align: center
-  padding: #{$padding * 2} #{$padding}
-  
 
 #header
+  padding: #{$padding * 2} #{$padding}
+  
   margin-bottom: $margin
   #logo-container
     margin: 0em 0em #{$padding} 0em
@@ -51,6 +45,17 @@ dt, li
   
   img#logo-mobile
     margin: #{$margin} auto #{$margin * 4}
+
+#footer
+  text-align: center
+  overflow: hidden
+  div
+    padding: $padding
+  #footer-notice
+    height: 1000px
+  #bottom-nav span:not(:last-child):after
+    content: " | "
+      
 
 .breadcrumbs
   margin-left: $margin-2
@@ -115,6 +120,9 @@ dt, li
 
 
 @media only screen and (min-width: 768px)
+  dt, li
+    word-break: normal
+  
   #header 
     text-align: left
     padding-bottom: $padding * 2

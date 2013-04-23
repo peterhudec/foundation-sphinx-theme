@@ -1,8 +1,18 @@
 # Require any additional compass plugins here.
+require 'zurb-foundation'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
+
+# local
 css_dir = "css"
+
+# sample project
+# css_dir = "../../sample_project/build/html/_static/css"
+
+# Authomatic
+# css_dir = "../../../authomatic/doc/build/html/_static/css"
+
 sass_dir = "sass"
 images_dir = "img"
 javascripts_dir = "js"
