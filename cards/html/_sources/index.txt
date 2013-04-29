@@ -2,7 +2,7 @@
  Foundation Sphinx Theme Demo
 =============================
 
-This is a simple demo of the Foundation Sphinx theme.
+This is a simple demo of the `Foundation Sphinx theme <http://github.com/peterhudec/foundation-sphinx-theme>`_.
 
 This is a ``literal``, this is a link to :func:`foo` function and this to :class:`Bar` class.
 
