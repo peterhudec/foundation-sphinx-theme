@@ -6,4 +6,5 @@
 .settings
 .sass-cache
 build/
-sample_project/build
+sample-project/build
+doctrees
