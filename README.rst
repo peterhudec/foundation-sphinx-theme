@@ -16,7 +16,7 @@ Usage
 #.	You also need to add the ``foundation`` extension in the ``conf.py``.
 	This is neccessary for creation of the top bar navigation.
 
-::
+.. code-block:: python
 	
 	sys.path[0:0] = [os.path.abspath('_themes/foundation_sphinx_theme')]
 	html_theme = 'foundation'
@@ -39,7 +39,7 @@ Options
 
 There are these theme options available:
 
-::
+.. code-block:: python
 	
 	html_theme_options = {
 		'motto': 'Long description which appears next to logo.',
