@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width" />
+  	<title>Sphinx Foundation Theme Examples</title>
+
+  	<link rel="stylesheet" href="simple/html/_static/foundation/css/basic.css" />
+  	<script src="simple/html/_static/foundation/js/vendor/custom.modernizr.js"></script>
+	
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+		
+		div {
+			padding: 2em;
+		}
+		
+		.button {
+			width: 100%;
+			padding: 2em;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<h1>Sphinx Foundation Theme Examples</h1>
+			<p>
+				This site lists sample output of the
+				<a href="http://github.com/peterhudec/foundation-sphinx-theme">Sphinx Foundation Theme</a>.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-6 columns">
+			<a href="simple/html/index.html" class="button radius">Simple</a>
+		</div>
+		<div class="large-6 columns">
+			<a href="cards/html/index.html" class="button radius">Cards</a>
+		</div>
+	</div>
+
+  <script>
+  var baseUrl = 'simple/html/_static/foundation/js/';
+  document.write('<script src=' + baseUrl + 
+  ('__proto__' in {} ? 'vendor/zepto' : 'vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="simple/html/_static/foundation/js/foundation.min.js"></script>
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

@@ -44,7 +44,7 @@ There are these theme options available:
 	html_theme_options = {
 		'motto': 'Long description which appears next to logo.',
 
-		# Your stylesheet elative to the _static dir.
+		# Your stylesheet relative to the _static dir.
 		# Default is 'foundation/css/basic.css'
 		'stylesheet': '/path/to/your/stylesheet.css',
 
