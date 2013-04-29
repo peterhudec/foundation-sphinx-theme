@@ -5,8 +5,8 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
-BUILDDIR      = build
-# BUILDDIR      = ../gh-page/cards
+# BUILDDIR      = build
+BUILDDIR      = ../gh-page/cards
 # BUILDDIR      = ../gh-page/simple
 
 # Internal variables.
