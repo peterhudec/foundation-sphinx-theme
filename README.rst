@@ -27,8 +27,8 @@ Styles
 
 There are two ready made styles.
 
-*	``foundation/css/basic.css``
-*	``foundation/css/cards.css``
+*	``foundation/css/basic.css`` `See demo. <http://peterhudec.github.io/foundation-sphinx-theme/basic/html/>`_
+*	``foundation/css/cards.css`` `See demo. <http://peterhudec.github.io/foundation-sphinx-theme/cards/html/>`_
 
 If you want to customize them or make your own style.
 Extend the ``sass`` sources in ``foundation/static/foundation/sass``.
