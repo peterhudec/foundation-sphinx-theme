@@ -97,7 +97,7 @@ html_theme = 'foundation'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'stylesheet': 'cards',
+    'stylesheet': 'foundation/css/cards.css',
     'motto': 'Lorem ipsum dolor sit amet, magna offendit similique ne nec. Ex doming sanctus labores pro, est ne dico simul laboramus.'
 }
 

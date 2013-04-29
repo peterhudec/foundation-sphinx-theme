@@ -1,7 +1,14 @@
-<!DOCTYPE html>
+{% set ishome = master_doc == pagename %}
 
-{% set script_files = script_files + ['_static/js/vendor/custom.modernizr.js'] %}
-{% set stylesheet = theme_stylesheet or 'basic' %}
+{% set script_files = script_files + ['_static/foundation/js/vendor/custom.modernizr.js'] %}
+
+{% macro seo_title() -%}
+	{% if ishome -%}
+		{{ docstitle|striptags|e }}
+	{%- else -%}
+		{{ title|striptags|e }} | {{ docstitle|striptags|e }}
+	{%- endif %}
+{%- endmacro %}
 
 {%- macro script() %}
     {%- for scriptfile in script_files %}
@@ -10,6 +17,7 @@
 {%- endmacro %}
 
 {%- macro css() %}
+	
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
     
@@ -17,8 +25,33 @@
     	<link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
     {%- endfor %}
     
-    <link rel="stylesheet" href="{{ pathto('_static/css/' + stylesheet + '.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/' + theme_stylesheet, 1) }}" type="text/css" />
+{%- endmacro %}
+
+{%- macro seo_tags() %}
+	{# Required Open Graph tags #}
+	<meta property="og:title" content="{{ seo_title() }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ pathto(theme_base_url + '/' + pagename, 1) }}.html" />
+	<meta property="og:image" content="{{ pathto(theme_base_url + '/_static/' + theme_opengraph_image, 1) }}" />
+	
+	{# Optional Open Graph tags #}
+	<meta property="og:description" content="{{ theme_motto|striptags|e }}" />
+	<meta property="og:site_name" content="{{ docstitle|striptags|e }}" />
+	
+	{% if theme_opengraph_tags is mapping %}
+		{%- for k, v in theme_opengraph_tags.items() %}
+	    	<meta property="og:{{ k }}" content="{{ v }}" />
+	    {%- endfor %}
+	{% endif %}
     
+    
+	<meta name="description" content="{{ theme_motto|striptags|e }}">
+    {% if theme_meta_tags is mapping %}
+	    {%- for k, v in theme_meta_tags.items() %}
+	    	<meta name="{{ k }}" content="{{ v }}" />
+	    {%- endfor %}
+	{% endif %}
 {%- endmacro %}
 
 {%- macro breadcrumbs() %}
@@ -58,20 +91,20 @@
 {%- endmacro %}
 
 {%- macro logo() %}
-<div>
-	<a href="{{ pathto(master_doc) }}">
-	{% if theme_logo_screen %}
-    	{% if theme_logo_mobile %}
-    		<img id="logo" class="hide-for-small" src="{{ pathto('_static/' + theme_logo_screen, 1) }}" />
-    		<img id="logo-mobile" class="show-for-small" src="{{ pathto('_static/' + theme_logo_mobile, 1) }}" />
-    	{% else %}
-    		<img id="logo" src="{{ pathto('_static/' + theme_logo_screen, 1) }}" />
-    	{% endif %}
-	{% else %}
-    	<h1 id="logo">{{ docstitle }}</h1>
-	{% endif %}
-	</a>
-</div>
+	<div>
+		<a href="{{ pathto(master_doc) }}">
+		{% if theme_logo_screen %}
+	    	{% if theme_logo_mobile %}
+	    		<img id="logo" class="hide-for-small" src="{{ pathto('_static/' + theme_logo_screen, 1) }}" />
+	    		<img id="logo-mobile" class="show-for-small" src="{{ pathto('_static/' + theme_logo_mobile, 1) }}" />
+	    	{% else %}
+	    		<img id="logo" src="{{ pathto('_static/' + theme_logo_screen, 1) }}" />
+	    	{% endif %}
+		{% else %}
+	    	<h1 id="logo">{{ docstitle }}</h1>
+		{% endif %}
+		</a>
+	</div>
 {% endmacro -%}
 
 {% block doctype %}
@@ -79,8 +112,8 @@
 {% endblock %}
 
 {% block html_open %}
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
 {% endblock %}
 
 {% block html_head %}
@@ -88,8 +121,14 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 
-	<title>{{ docstitle|striptags|e }}</title>
-
+	<title>{{ seo_title() }}</title>
+	
+	{%- if theme_favicon %}
+    	<link rel="icon" type="image/x-icon" href="{{ pathto('_static/' + theme_favicon, 1) }}" />
+    {%- endif %}
+	
+	{{ seo_tags() }}
+	
 	{{ css() }}
 
     {%- if not embedded %}
@@ -212,11 +251,11 @@
 	{%- endblock -%}
 	<script>
 		document.write('<script src=' +
-		('__proto__' in {} ? '{{ pathto('_static', 1) }}/js/vendor/zepto' : 'js/vendor/jquery') +
+		('__proto__' in {} ? '{{ pathto('_static/foundation', 1) }}/js/vendor/zepto' : 'js/vendor/jquery') +
 		'.js><\/script>')
 	</script>
-	<script src="{{ pathto('_static/js/foundation.min.js', 1) }}"></script>
-	<script src="{{ pathto('_static/js/foundation/foundation.topbar.js', 1) }}"></script>
+	<script src="{{ pathto('_static/foundation/js/foundation.min.js', 1) }}"></script>
+	<script src="{{ pathto('_static/foundation/js/foundation/foundation.topbar.js', 1) }}"></script>
 	<script>
 		$(document).foundation();
 		
