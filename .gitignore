@@ -4,5 +4,6 @@
 .project
 .pydevproject
 .settings
+.sass-cache
 build/
 sample_project/build
