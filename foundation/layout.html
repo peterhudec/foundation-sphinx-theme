@@ -276,10 +276,9 @@
 		// Add "returns" class to all returns elements
 		$(".field-name:contains('Returns:')").parent().addClass('returns')
 		
-		{% if theme_google_analytics_id and theme_google_analytics_domain %}
+		{% if theme_google_analytics_id %}
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', '{{ theme_google_analytics_id }}']);
-		_gaq.push(['_setDomainName', '{{ theme_google_analytics_domain }}']);
 		_gaq.push(['_trackPageview']);
 		(function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;

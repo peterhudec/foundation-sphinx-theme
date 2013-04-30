@@ -75,9 +75,8 @@ There are these theme options available:
 		# The title of the aformentioned top-level item. Default is "Sections"
 		'top_bar_content_title': 'Sections',
 
-		# If both are set, a google analytics code will be appended to body of each page.
+		# If set, Google Analytics code will be appended to body of each page.
 		'google_analytics_id': 'your-google-analytics-id',
-		'google_analytics_domain': 'example.com',
 
 		# The "og:title", "og:type", "og:url", "og:site_name" and "og:description" Open Graph tags
 		# will be generated automatically, but you should specify the
