@@ -98,5 +98,5 @@ There are these theme options available:
 
 		# Use this as the base for Open Graph URLs without trailing slash.
 		'base_url': 'http://example.com',
-   }
+    }
 
