@@ -10,16 +10,24 @@ This is a Sphinx theme based on the |foundation|_ css framework.
 Usage
 -----
 
-#.	Make the ``foundation`` package available either by installing it through PyPi
-	or by including in the ``PYTHONPATH`` in ``conf.py``.
-#.	Set the ``html_theme`` variable to ``'foundation'``.
-#.	You also need to add the ``foundation`` extension in the ``conf.py``.
-	This is neccessary for creation of the top bar navigation.
+Set the ``html_theme`` variable to ``'foundation'``.
 
 .. code-block:: python
 	
-	sys.path[0:0] = [os.path.abspath('_themes/foundation_sphinx_theme')]
+	# conf.py
+
+	html_theme_path = ['_themes/foundation-sphinx-theme']
 	html_theme = 'foundation'
+
+You also need to add the ``foundation`` extension in the ``conf.py``.
+The extension just injects some foundation |foundation|_ css classes
+needed for creation of the top bar navigation.
+
+.. code-block:: python
+	
+	# conf.py
+
+	sys.path[0:0] = [os.path.abspath('_themes/foundation-sphinx-theme')]
 	extensions = ['sphinx.ext.autodoc', 'foundation']
 
 Styles
@@ -30,8 +38,8 @@ There are two ready made styles.
 *	``foundation/css/basic.css`` `See demo. <http://peterhudec.github.io/foundation-sphinx-theme/basic/html/>`_
 *	``foundation/css/cards.css`` `See demo. <http://peterhudec.github.io/foundation-sphinx-theme/cards/html/>`_
 
-If you want to customize them or make your own style.
-Extend the ``sass`` sources in ``foundation/static/foundation/sass``.
+If you want to customize them or make your own,
+extend the ``sass`` sources in ``foundation/static/foundation/sass``.
 
 
 Options
