@@ -49,6 +49,8 @@ There are these theme options available:
 
 .. code-block:: python
 	
+	# conf.py
+	
 	html_theme_options = {
 		'motto': 'Long description which appears next to logo.',
 
