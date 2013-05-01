@@ -48,16 +48,24 @@
 	</div>
 
   <script>
-  var baseUrl = 'simple/html/_static/foundation/js/';
+  var baseUrl = 'basic/html/_static/foundation/js/';
   document.write('<script src=' + baseUrl + 
   ('__proto__' in {} ? 'vendor/zepto' : 'vendor/jquery') +
   '.js><\/script>')
   </script>
   
-  <script src="simple/html/_static/foundation/js/foundation.min.js"></script>
+  <script src="basic/html/_static/foundation/js/foundation.min.js"></script>
   
   <script>
     $(document).foundation();
+    var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-40554445-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
   </script>
 </body>
 </html>

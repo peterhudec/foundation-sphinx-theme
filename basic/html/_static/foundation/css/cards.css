@@ -5800,65 +5800,65 @@ dt, li {
   background: #333333;
 }
 
-/* line 364, ../sass/cards.sass */
+/* line 367, ../sass/cards.sass */
 a {
   color: #3aa7d6;
 }
-/* line 366, ../sass/cards.sass */
+/* line 369, ../sass/cards.sass */
 a:hover {
   color: #8ecde8;
 }
-/* line 368, ../sass/cards.sass */
+/* line 371, ../sass/cards.sass */
 a.headerlink {
   margin-left: 0.2em;
 }
 
-/* line 372, ../sass/cards.sass */
+/* line 375, ../sass/cards.sass */
 body {
   color: #454545;
   background-color: white;
 }
 
-/* line 377, ../sass/cards.sass */
+/* line 380, ../sass/cards.sass */
 h1, h2, h3, h4, h5, h6 {
   color: #454545;
 }
 
-/* line 381, ../sass/cards.sass */
+/* line 384, ../sass/cards.sass */
 table, table tr, table tr:nth-of-type(even) {
   border: none;
   background-color: transparent;
   background: none;
 }
 
-/* line 387, ../sass/cards.sass */
+/* line 390, ../sass/cards.sass */
 #header {
   background-color: #454545;
   color: #f2f0ed;
 }
-/* line 390, ../sass/cards.sass */
+/* line 393, ../sass/cards.sass */
 #header h1 {
   color: #f2f0ed;
 }
 
-/* line 394, ../sass/cards.sass */
+/* line 397, ../sass/cards.sass */
 #footer-notice {
   background-color: #454545;
   color: #f2f0ed;
 }
 
-/* line 398, ../sass/cards.sass */
+/* line 401, ../sass/cards.sass */
 #navigation > ul {
   padding: 20px;
 }
 
-/* line 402, ../sass/cards.sass */
+/* line 405, ../sass/cards.sass */
 ul.breadcrumbs {
   background-color: transparent;
   padding: 0em;
   border: none;
 }
-/* line 284, ../sass/cards.sass */
+/* line 287, ../sass/cards.sass */
 ul.breadcrumbs li {
   background-color: #f7f3eb;
   position: relative;
@@ -5869,15 +5869,15 @@ ul.breadcrumbs li {
   color: #454545;
   margin-bottom: 20px;
 }
-/* line 294, ../sass/cards.sass */
+/* line 297, ../sass/cards.sass */
 ul.breadcrumbs li a {
   padding: 0em;
 }
-/* line 297, ../sass/cards.sass */
+/* line 300, ../sass/cards.sass */
 ul.breadcrumbs li.current a {
   color: #454545;
 }
-/* line 300, ../sass/cards.sass */
+/* line 303, ../sass/cards.sass */
 ul.breadcrumbs li:after {
   pointer-events: none;
   content: "";
@@ -5891,7 +5891,7 @@ ul.breadcrumbs li:after {
   right: 0px;
   bottom: 50%;
 }
-/* line 305, ../sass/cards.sass */
+/* line 308, ../sass/cards.sass */
 ul.breadcrumbs li:before {
   pointer-events: none;
   content: "";
@@ -5905,11 +5905,11 @@ ul.breadcrumbs li:before {
   right: 0px;
   top: 50%;
 }
-/* line 265, ../sass/cards.sass */
+/* line 268, ../sass/cards.sass */
 ul.breadcrumbs li:nth-child(even) {
   background-color: #f7f3eb;
 }
-/* line 267, ../sass/cards.sass */
+/* line 270, ../sass/cards.sass */
 ul.breadcrumbs li:nth-child(even):after {
   border-color: transparent #ded5c5 transparent transparent;
   _border-left-color: lime;
@@ -5917,7 +5917,7 @@ ul.breadcrumbs li:nth-child(even):after {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 269, ../sass/cards.sass */
+/* line 272, ../sass/cards.sass */
 ul.breadcrumbs li:nth-child(even):before {
   border-color: transparent #ded5c5 transparent transparent;
   _border-left-color: lime;
@@ -5925,11 +5925,11 @@ ul.breadcrumbs li:nth-child(even):before {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 272, ../sass/cards.sass */
+/* line 275, ../sass/cards.sass */
 ul.breadcrumbs li:nth-child(odd) {
   background-color: #ded5c5;
 }
-/* line 274, ../sass/cards.sass */
+/* line 277, ../sass/cards.sass */
 ul.breadcrumbs li:nth-child(odd):after {
   border-color: transparent #f7f3eb transparent transparent;
   _border-left-color: lime;
@@ -5937,7 +5937,7 @@ ul.breadcrumbs li:nth-child(odd):after {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 276, ../sass/cards.sass */
+/* line 279, ../sass/cards.sass */
 ul.breadcrumbs li:nth-child(odd):before {
   border-color: transparent #f7f3eb transparent transparent;
   _border-left-color: lime;
@@ -5945,14 +5945,14 @@ ul.breadcrumbs li:nth-child(odd):before {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 312, ../sass/cards.sass */
+/* line 315, ../sass/cards.sass */
 ul.breadcrumbs li:first-child {
   background-color: #454545;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   padding-left: 20px;
 }
-/* line 317, ../sass/cards.sass */
+/* line 320, ../sass/cards.sass */
 ul.breadcrumbs li:first-child:after {
   border-color: transparent #f7f3eb transparent transparent;
   _border-left-color: lime;
@@ -5960,7 +5960,7 @@ ul.breadcrumbs li:first-child:after {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 320, ../sass/cards.sass */
+/* line 323, ../sass/cards.sass */
 ul.breadcrumbs li:first-child:before {
   border-color: transparent #f7f3eb transparent transparent;
   _border-left-color: lime;
@@ -5968,42 +5968,42 @@ ul.breadcrumbs li:first-child:before {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 324, ../sass/cards.sass */
+/* line 327, ../sass/cards.sass */
 ul.breadcrumbs li:last-child {
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
 }
-/* line 327, ../sass/cards.sass */
+/* line 330, ../sass/cards.sass */
 ul.breadcrumbs li:last-child:after {
   border: none;
 }
-/* line 329, ../sass/cards.sass */
+/* line 332, ../sass/cards.sass */
 ul.breadcrumbs li:last-child:before {
   border: none;
 }
-/* line 404, ../sass/cards.sass */
+/* line 407, ../sass/cards.sass */
 ul.breadcrumbs li a {
   color: #3aa7d6;
 }
-/* line 406, ../sass/cards.sass */
+/* line 409, ../sass/cards.sass */
 ul.breadcrumbs li a:hover {
   color: #8ecde8;
 }
 
-/* line 412, ../sass/cards.sass */
+/* line 415, ../sass/cards.sass */
 #content .highlight {
   background-color: #454545;
   padding: 20px;
   border-radius: 16px;
   line-height: 1em;
 }
-/* line 417, ../sass/cards.sass */
+/* line 420, ../sass/cards.sass */
 #content .highlight > pre {
   padding: 0em;
   padding-bottom: 0.2em;
   background-color: transparent;
 }
-/* line 421, ../sass/cards.sass */
+/* line 424, ../sass/cards.sass */
 #content .highlight .hll {
   display: block;
   border-radius: 8px;
@@ -6013,7 +6013,7 @@ ul.breadcrumbs li a:hover {
   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
   background-color: #525252;
 }
-/* line 429, ../sass/cards.sass */
+/* line 432, ../sass/cards.sass */
 #content tt.docutils.literal:not(.xref) {
   padding: 0.2em 0.5em;
   border-radius: 0.4em;
@@ -6066,28 +6066,32 @@ ul.breadcrumbs li a:hover {
   vertical-align: top;
 }
 /* line 204, ../sass/cards.sass */
+#content .class table.field-list tr th {
+  padding-right: 0em;
+}
+/* line 207, ../sass/cards.sass */
 #content .class table.field-list tr:first-child > th {
   border-top-left-radius: 16px;
 }
-/* line 206, ../sass/cards.sass */
+/* line 209, ../sass/cards.sass */
 #content .class table.field-list tr:last-child > th {
   border-bottom-left-radius: 16px;
 }
-/* line 209, ../sass/cards.sass */
+/* line 212, ../sass/cards.sass */
 #content .class table.field-list tr:first-child > td:last-child {
   border-top-right-radius: 16px;
 }
-/* line 211, ../sass/cards.sass */
+/* line 214, ../sass/cards.sass */
 #content .class table.field-list tr:last-child > td:last-child {
   border-bottom-right-radius: 16px;
 }
-/* line 215, ../sass/cards.sass */
+/* line 218, ../sass/cards.sass */
 #content .class table.field-list tr.returns > th {
   background-color: #454545;
   color: #f2f0ed;
   vertical-align: middle;
 }
-/* line 221, ../sass/cards.sass */
+/* line 224, ../sass/cards.sass */
 #content .class table.field-list tr.returns > td {
   background-color: #ded5c5;
   color: #454545;
@@ -6137,38 +6141,42 @@ ul.breadcrumbs li a:hover {
   vertical-align: top;
 }
 /* line 204, ../sass/cards.sass */
+#content .class .method table.field-list tr th, #content .class .classmethod table.field-list tr th, #content .class .staticmethod table.field-list tr th {
+  padding-right: 0em;
+}
+/* line 207, ../sass/cards.sass */
 #content .class .method table.field-list tr:first-child > th, #content .class .classmethod table.field-list tr:first-child > th, #content .class .staticmethod table.field-list tr:first-child > th {
   border-top-left-radius: 16px;
 }
-/* line 206, ../sass/cards.sass */
+/* line 209, ../sass/cards.sass */
 #content .class .method table.field-list tr:last-child > th, #content .class .classmethod table.field-list tr:last-child > th, #content .class .staticmethod table.field-list tr:last-child > th {
   border-bottom-left-radius: 16px;
 }
-/* line 209, ../sass/cards.sass */
+/* line 212, ../sass/cards.sass */
 #content .class .method table.field-list tr:first-child > td:last-child, #content .class .classmethod table.field-list tr:first-child > td:last-child, #content .class .staticmethod table.field-list tr:first-child > td:last-child {
   border-top-right-radius: 16px;
 }
-/* line 211, ../sass/cards.sass */
+/* line 214, ../sass/cards.sass */
 #content .class .method table.field-list tr:last-child > td:last-child, #content .class .classmethod table.field-list tr:last-child > td:last-child, #content .class .staticmethod table.field-list tr:last-child > td:last-child {
   border-bottom-right-radius: 16px;
 }
-/* line 215, ../sass/cards.sass */
+/* line 218, ../sass/cards.sass */
 #content .class .method table.field-list tr.returns > th, #content .class .classmethod table.field-list tr.returns > th, #content .class .staticmethod table.field-list tr.returns > th {
   background-color: #454545;
   color: #f2f0ed;
   vertical-align: middle;
 }
-/* line 221, ../sass/cards.sass */
+/* line 224, ../sass/cards.sass */
 #content .class .method table.field-list tr.returns > td, #content .class .classmethod table.field-list tr.returns > td, #content .class .staticmethod table.field-list tr.returns > td {
   background-color: #ded5c5;
   color: #454545;
   vertical-align: middle;
 }
-/* line 445, ../sass/cards.sass */
+/* line 448, ../sass/cards.sass */
 #content .class .method:last-child, #content .class .classmethod:last-child, #content .class .staticmethod:last-child {
   margin-bottom: 0em;
 }
-/* line 449, ../sass/cards.sass */
+/* line 452, ../sass/cards.sass */
 #content .class .method > dt, #content .class .method > dd, #content .class .classmethod > dt, #content .class .classmethod > dd, #content .class .staticmethod > dt, #content .class .staticmethod > dd {
   background-color: transparent;
   color: #454545;
@@ -6176,13 +6184,13 @@ ul.breadcrumbs li a:hover {
   border-width: 2px;
   border-color: #ded5c5;
 }
-/* line 456, ../sass/cards.sass */
+/* line 459, ../sass/cards.sass */
 #content .class .method > dd, #content .class .classmethod > dd, #content .class .staticmethod > dd {
   background-color: transparent;
   border-top: none;
   margin-bottom: 0em;
 }
-/* line 461, ../sass/cards.sass */
+/* line 464, ../sass/cards.sass */
 #content .class .method > dd > *:last-child, #content .class .classmethod > dd > *:last-child, #content .class .staticmethod > dd > *:last-child {
   margin-bottom: 0em;
 }
@@ -6230,42 +6238,46 @@ ul.breadcrumbs li a:hover {
   vertical-align: top;
 }
 /* line 204, ../sass/cards.sass */
+#content .function table.field-list tr th {
+  padding-right: 0em;
+}
+/* line 207, ../sass/cards.sass */
 #content .function table.field-list tr:first-child > th {
   border-top-left-radius: 16px;
 }
-/* line 206, ../sass/cards.sass */
+/* line 209, ../sass/cards.sass */
 #content .function table.field-list tr:last-child > th {
   border-bottom-left-radius: 16px;
 }
-/* line 209, ../sass/cards.sass */
+/* line 212, ../sass/cards.sass */
 #content .function table.field-list tr:first-child > td:last-child {
   border-top-right-radius: 16px;
 }
-/* line 211, ../sass/cards.sass */
+/* line 214, ../sass/cards.sass */
 #content .function table.field-list tr:last-child > td:last-child {
   border-bottom-right-radius: 16px;
 }
-/* line 215, ../sass/cards.sass */
+/* line 218, ../sass/cards.sass */
 #content .function table.field-list tr.returns > th {
   background-color: #454545;
   color: #f2f0ed;
   vertical-align: middle;
 }
-/* line 221, ../sass/cards.sass */
+/* line 224, ../sass/cards.sass */
 #content .function table.field-list tr.returns > td {
   background-color: #ded5c5;
   color: #454545;
   vertical-align: middle;
 }
-/* line 468, ../sass/cards.sass */
+/* line 471, ../sass/cards.sass */
 #content dl > dd > table.docutils.field-list {
   margin-bottom: 20px;
 }
-/* line 470, ../sass/cards.sass */
+/* line 473, ../sass/cards.sass */
 #content dl > dd > table.docutils.field-list:last-child {
   margin-bottom: 0em;
 }
-/* line 474, ../sass/cards.sass */
+/* line 477, ../sass/cards.sass */
 #content .topic, #content .hlist, #content .genindex-jumpbox, #content .indextable {
   padding: 20px;
   border-radius: 16px;
@@ -6273,12 +6285,12 @@ ul.breadcrumbs li a:hover {
   background-color: #f7f3eb;
   color: #454545;
 }
-/* line 476, ../sass/cards.sass */
+/* line 479, ../sass/cards.sass */
 #content .topic td, #content .hlist td, #content .genindex-jumpbox td, #content .indextable td {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
-/* line 485, ../sass/cards.sass */
+/* line 488, ../sass/cards.sass */
 #content .topic {
   background-color: #f7f3eb;
   color: #454545;
@@ -6297,12 +6309,12 @@ ul.breadcrumbs li a:hover {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
-/* line 492, ../sass/cards.sass */
+/* line 495, ../sass/cards.sass */
 #content .topic > * {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 497, ../sass/cards.sass */
+/* line 500, ../sass/cards.sass */
 #content .topic .first {
   background-color: #454545;
   color: #f2f0ed;
@@ -6313,56 +6325,56 @@ ul.breadcrumbs li a:hover {
   margin: 0em;
   margin-bottom: 20px;
 }
-/* line 503, ../sass/cards.sass */
+/* line 506, ../sass/cards.sass */
 #content table.docutils:not(.citation) {
   background-color: transparent;
 }
-/* line 505, ../sass/cards.sass */
+/* line 508, ../sass/cards.sass */
 #content table.docutils:not(.citation) td, #content table.docutils:not(.citation) th {
   background-color: #f7f3eb;
   color: #454545;
   padding: 20px;
   border: none;
 }
-/* line 511, ../sass/cards.sass */
+/* line 514, ../sass/cards.sass */
 #content table.docutils:not(.citation) tr.row-odd td {
   background-color: #f0e8d9;
   color: #454545;
 }
-/* line 515, ../sass/cards.sass */
+/* line 518, ../sass/cards.sass */
 #content table.docutils:not(.citation) thead th {
   background-color: #454545;
   color: #f2f0ed;
 }
-/* line 334, ../sass/cards.sass */
+/* line 337, ../sass/cards.sass */
 #content table.docutils:not(.citation) thead th:first-child {
   border-top-left-radius: 16px;
 }
-/* line 336, ../sass/cards.sass */
+/* line 339, ../sass/cards.sass */
 #content table.docutils:not(.citation) thead th:last-child {
   border-top-right-radius: 16px;
 }
-/* line 342, ../sass/cards.sass */
+/* line 345, ../sass/cards.sass */
 #content table.docutils:not(.citation) tr:last-child td:first-child {
   border-bottom-left-radius: 16px;
 }
-/* line 344, ../sass/cards.sass */
+/* line 347, ../sass/cards.sass */
 #content table.docutils:not(.citation) tr:last-child td:last-child {
   border-bottom-right-radius: 16px;
 }
-/* line 524, ../sass/cards.sass */
+/* line 527, ../sass/cards.sass */
 #content table.longtable.docutils tr:first-child td:first-child {
   border-top-left-radius: 16px;
 }
-/* line 526, ../sass/cards.sass */
+/* line 529, ../sass/cards.sass */
 #content table.longtable.docutils tr:first-child td:last-child {
   border-top-right-radius: 16px;
 }
-/* line 530, ../sass/cards.sass */
+/* line 533, ../sass/cards.sass */
 #content div.modindex-jumpbox {
   border: none;
 }
-/* line 533, ../sass/cards.sass */
+/* line 536, ../sass/cards.sass */
 #content table.indextable {
   background-color: #f7f3eb;
   padding: 0em;
@@ -6371,19 +6383,19 @@ ul.breadcrumbs li a:hover {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }
-/* line 355, ../sass/cards.sass */
+/* line 358, ../sass/cards.sass */
 #content table.indextable tr:last-child td:first-child {
   border-bottom-left-radius: 16px;
 }
-/* line 357, ../sass/cards.sass */
+/* line 360, ../sass/cards.sass */
 #content table.indextable tr:last-child td:last-child {
   border-bottom-right-radius: 16px;
 }
-/* line 265, ../sass/cards.sass */
+/* line 268, ../sass/cards.sass */
 #content table.indextable tr:nth-child(even) {
   background-color: #f0e8d9;
 }
-/* line 267, ../sass/cards.sass */
+/* line 270, ../sass/cards.sass */
 #content table.indextable tr:nth-child(even):after {
   border-color: transparent transparent transparent transparent;
   _border-left-color: lime;
@@ -6391,7 +6403,7 @@ ul.breadcrumbs li a:hover {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 269, ../sass/cards.sass */
+/* line 272, ../sass/cards.sass */
 #content table.indextable tr:nth-child(even):before {
   border-color: transparent transparent transparent transparent;
   _border-left-color: lime;
@@ -6399,11 +6411,11 @@ ul.breadcrumbs li a:hover {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 272, ../sass/cards.sass */
+/* line 275, ../sass/cards.sass */
 #content table.indextable tr:nth-child(odd) {
   background-color: transparent;
 }
-/* line 274, ../sass/cards.sass */
+/* line 277, ../sass/cards.sass */
 #content table.indextable tr:nth-child(odd):after {
   border-color: transparent #f0e8d9 transparent transparent;
   _border-left-color: lime;
@@ -6411,7 +6423,7 @@ ul.breadcrumbs li a:hover {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 276, ../sass/cards.sass */
+/* line 279, ../sass/cards.sass */
 #content table.indextable tr:nth-child(odd):before {
   border-color: transparent #f0e8d9 transparent transparent;
   _border-left-color: lime;
@@ -6419,30 +6431,30 @@ ul.breadcrumbs li a:hover {
   _border-left-color: lime;
   _filter: chroma(color=lime);
 }
-/* line 543, ../sass/cards.sass */
+/* line 546, ../sass/cards.sass */
 #content table.indextable tr.cap td {
   background-color: #454545;
   color: #f2f0ed;
   padding: 20px;
 }
-/* line 334, ../sass/cards.sass */
+/* line 337, ../sass/cards.sass */
 #content table.indextable tr.cap td:first-child {
   border-top-left-radius: 16px;
 }
-/* line 336, ../sass/cards.sass */
+/* line 339, ../sass/cards.sass */
 #content table.indextable tr.cap td:last-child {
   border-top-right-radius: 16px;
 }
-/* line 547, ../sass/cards.sass */
+/* line 550, ../sass/cards.sass */
 #content table.indextable tr.pcap {
   display: none;
 }
-/* line 550, ../sass/cards.sass */
+/* line 553, ../sass/cards.sass */
 #content table.genindextable {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
-/* line 555, ../sass/cards.sass */
+/* line 558, ../sass/cards.sass */
 #content blockquote, #content .epigraph {
   background-color: transparent;
   color: inherit;
@@ -6452,49 +6464,49 @@ ul.breadcrumbs li a:hover {
   border-color: #ded5c5;
   border-radius: 16px;
 }
-/* line 566, ../sass/cards.sass */
+/* line 569, ../sass/cards.sass */
 #content table.docutils.citation {
   border: none;
 }
-/* line 568, ../sass/cards.sass */
+/* line 571, ../sass/cards.sass */
 #content table.docutils.citation td {
   border-radius: 0px;
   padding: 20px;
   background-color: #f7f3eb;
   color: #454545;
 }
-/* line 574, ../sass/cards.sass */
+/* line 577, ../sass/cards.sass */
 #content table.docutils.citation td.label {
   background-color: #454545;
   color: #f2f0ed;
   text-align: left;
 }
-/* line 580, ../sass/cards.sass */
+/* line 583, ../sass/cards.sass */
 #content table.docutils.citation:first-of-type td {
   border-top-right-radius: 16px;
 }
-/* line 582, ../sass/cards.sass */
+/* line 585, ../sass/cards.sass */
 #content table.docutils.citation:first-of-type td.label {
   border-radius: 0em;
   border-top-left-radius: 16px;
 }
-/* line 587, ../sass/cards.sass */
+/* line 590, ../sass/cards.sass */
 #content table.docutils.citation:last-of-type td {
   border-bottom-right-radius: 16px;
 }
-/* line 589, ../sass/cards.sass */
+/* line 592, ../sass/cards.sass */
 #content table.docutils.citation:last-of-type td.label {
   border-radius: 0em;
   border-bottom-left-radius: 16px;
 }
-/* line 594, ../sass/cards.sass */
+/* line 597, ../sass/cards.sass */
 #content .admonition, #content .sidebar {
   background-color: transparent;
   border: none;
   padding: 0em !important;
   border: 0em;
 }
-/* line 233, ../sass/cards.sass */
+/* line 236, ../sass/cards.sass */
 #content .admonition .first, #content .sidebar .first {
   background-color: transparent;
   color: #454545;
@@ -6506,7 +6518,7 @@ ul.breadcrumbs li a:hover {
   background-color: #f7db00;
   color: #454545;
 }
-/* line 240, ../sass/cards.sass */
+/* line 243, ../sass/cards.sass */
 #content .admonition .last, #content .sidebar .last {
   background-color: transparent;
   color: #454545;
@@ -6516,31 +6528,31 @@ ul.breadcrumbs li a:hover {
   background-color: #ffef73;
   color: #454545;
 }
-/* line 598, ../sass/cards.sass */
+/* line 601, ../sass/cards.sass */
 #content .admonition.sidebar .first, #content .sidebar.sidebar .first {
   background-color: #454545;
   color: #f2f0ed;
 }
-/* line 601, ../sass/cards.sass */
+/* line 604, ../sass/cards.sass */
 #content .admonition.sidebar .sidebar-subtitle, #content .sidebar.sidebar .sidebar-subtitle {
   padding: 8px 16px;
   margin: 0em;
   background-color: #787878;
   color: #f2f0ed;
 }
-/* line 606, ../sass/cards.sass */
+/* line 609, ../sass/cards.sass */
 #content .admonition.sidebar .last, #content .sidebar.sidebar .last {
   background-color: #f7f3eb;
   color: #454545;
 }
-/* line 610, ../sass/cards.sass */
+/* line 613, ../sass/cards.sass */
 #content .admonition.note, #content .admonition.hint, #content .sidebar.note, #content .sidebar.hint {
   background-color: transparent;
   border: none;
   padding: 0em !important;
   border: 0em;
 }
-/* line 233, ../sass/cards.sass */
+/* line 236, ../sass/cards.sass */
 #content .admonition.note .first, #content .admonition.hint .first, #content .sidebar.note .first, #content .sidebar.hint .first {
   background-color: transparent;
   color: #454545;
@@ -6552,7 +6564,7 @@ ul.breadcrumbs li a:hover {
   background-color: #f7db00;
   color: #454545;
 }
-/* line 240, ../sass/cards.sass */
+/* line 243, ../sass/cards.sass */
 #content .admonition.note .last, #content .admonition.hint .last, #content .sidebar.note .last, #content .sidebar.hint .last {
   background-color: transparent;
   color: #454545;
@@ -6562,14 +6574,14 @@ ul.breadcrumbs li a:hover {
   background-color: #ffef73;
   color: #454545;
 }
-/* line 613, ../sass/cards.sass */
+/* line 616, ../sass/cards.sass */
 #content .admonition.tip, #content .admonition.seealso, #content .sidebar.tip, #content .sidebar.seealso {
   background-color: transparent;
   border: none;
   padding: 0em !important;
   border: 0em;
 }
-/* line 233, ../sass/cards.sass */
+/* line 236, ../sass/cards.sass */
 #content .admonition.tip .first, #content .admonition.seealso .first, #content .sidebar.tip .first, #content .sidebar.seealso .first {
   background-color: transparent;
   color: #454545;
@@ -6581,7 +6593,7 @@ ul.breadcrumbs li a:hover {
   background-color: #f7db00;
   color: #454545;
 }
-/* line 240, ../sass/cards.sass */
+/* line 243, ../sass/cards.sass */
 #content .admonition.tip .last, #content .admonition.seealso .last, #content .sidebar.tip .last, #content .sidebar.seealso .last {
   background-color: transparent;
   color: #454545;
@@ -6591,24 +6603,24 @@ ul.breadcrumbs li a:hover {
   background-color: #ffef73;
   color: #454545;
 }
-/* line 615, ../sass/cards.sass */
+/* line 618, ../sass/cards.sass */
 #content .admonition.tip .first, #content .admonition.seealso .first, #content .sidebar.tip .first, #content .sidebar.seealso .first {
   background-color: #72c257;
   color: #454545;
 }
-/* line 618, ../sass/cards.sass */
+/* line 621, ../sass/cards.sass */
 #content .admonition.tip .last, #content .admonition.seealso .last, #content .sidebar.tip .last, #content .sidebar.seealso .last {
   background-color: #deffd4;
   color: #454545;
 }
-/* line 622, ../sass/cards.sass */
+/* line 625, ../sass/cards.sass */
 #content .admonition.attention, #content .admonition.danger, #content .admonition.error, #content .admonition.warning, #content .admonition.important, #content .sidebar.attention, #content .sidebar.danger, #content .sidebar.error, #content .sidebar.warning, #content .sidebar.important {
   background-color: transparent;
   border: none;
   padding: 0em !important;
   border: 0em;
 }
-/* line 233, ../sass/cards.sass */
+/* line 236, ../sass/cards.sass */
 #content .admonition.attention .first, #content .admonition.danger .first, #content .admonition.error .first, #content .admonition.warning .first, #content .admonition.important .first, #content .sidebar.attention .first, #content .sidebar.danger .first, #content .sidebar.error .first, #content .sidebar.warning .first, #content .sidebar.important .first {
   background-color: transparent;
   color: #454545;
@@ -6620,7 +6632,7 @@ ul.breadcrumbs li a:hover {
   background-color: #f7db00;
   color: #454545;
 }
-/* line 240, ../sass/cards.sass */
+/* line 243, ../sass/cards.sass */
 #content .admonition.attention .last, #content .admonition.danger .last, #content .admonition.error .last, #content .admonition.warning .last, #content .admonition.important .last, #content .sidebar.attention .last, #content .sidebar.danger .last, #content .sidebar.error .last, #content .sidebar.warning .last, #content .sidebar.important .last {
   background-color: transparent;
   color: #454545;
@@ -6630,12 +6642,12 @@ ul.breadcrumbs li a:hover {
   background-color: #ffef73;
   color: #454545;
 }
-/* line 624, ../sass/cards.sass */
+/* line 627, ../sass/cards.sass */
 #content .admonition.attention .first, #content .admonition.danger .first, #content .admonition.error .first, #content .admonition.warning .first, #content .admonition.important .first, #content .sidebar.attention .first, #content .sidebar.danger .first, #content .sidebar.error .first, #content .sidebar.warning .first, #content .sidebar.important .first {
   background-color: #e01b6a;
   color: #454545;
 }
-/* line 627, ../sass/cards.sass */
+/* line 630, ../sass/cards.sass */
 #content .admonition.attention .last, #content .admonition.danger .last, #content .admonition.error .last, #content .admonition.warning .last, #content .admonition.important .last, #content .sidebar.attention .last, #content .sidebar.danger .last, #content .sidebar.error .last, #content .sidebar.warning .last, #content .sidebar.important .last {
   background-color: #fc9dc3;
   color: #454545;
