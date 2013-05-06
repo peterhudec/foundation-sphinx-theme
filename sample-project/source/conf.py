@@ -101,7 +101,7 @@ html_theme_options = {
     'motto': 'Lorem ipsum dolor sit amet, magna offendit similique ne nec. Ex doming sanctus labores pro, est ne dico simul laboramus.',
     'google_analytics_id': 'UA-40554445-2',
     'social_buttons': True,
-    'base_url': 'http://peterhudec.github.io/foundation-sphinx-theme/basic/html',
+    'base_url': 'http://peterhudec.github.io/foundation-sphinx-theme/cards/html',
     'facebook_app_id': '245101572296049',
     'twitter_id': 'FoundationSphinx',
     'author': 'Peter Hudec',

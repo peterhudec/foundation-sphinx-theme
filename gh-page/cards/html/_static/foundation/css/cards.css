@@ -5784,34 +5784,42 @@ div.social-buttons > ul > li {
   margin: 0em;
 }
 
+/* line 185, ../sass/basic.sass */
+.google-plus-badge img {
+  vertical-align: -3px;
+  border: 0px;
+  width: 16px;
+  height: 16px;
+}
+
 @media only screen and (min-width: 768px) {
-  /* line 186, ../sass/basic.sass */
+  /* line 192, ../sass/basic.sass */
   dt, li {
     word-break: normal;
   }
 
-  /* line 189, ../sass/basic.sass */
+  /* line 195, ../sass/basic.sass */
   #header {
     text-align: left;
     padding-bottom: 2.5em;
   }
-  /* line 193, ../sass/basic.sass */
+  /* line 199, ../sass/basic.sass */
   #header #logo, #header #motto {
     font-weight: bold;
     margin: 0em;
   }
-  /* line 197, ../sass/basic.sass */
+  /* line 203, ../sass/basic.sass */
   #header #logo-container {
     margin-bottom: 0em;
   }
 
-  /* line 200, ../sass/basic.sass */
+  /* line 206, ../sass/basic.sass */
   .breadcrumbs {
     margin-left: 0em;
     margin-right: 0em;
   }
 
-  /* line 205, ../sass/basic.sass */
+  /* line 211, ../sass/basic.sass */
   #content table td, #content table th {
     word-break: normal;
     padding: 0.75em;
