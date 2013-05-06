@@ -8,7 +8,7 @@ http_path = "/"
 css_dir = "css"
 
 # sample project
-# css_dir = "../../../sample_project/build/html/_static/foundation/css"
+# css_dir = "../../../sample-project/build/html/_static/foundation/css"
 
 # Authomatic
 # css_dir = "../../../../authomatic/doc/build/html/_static/foundation/css"
