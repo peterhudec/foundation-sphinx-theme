@@ -104,6 +104,10 @@ html_theme_options = {
     'base_url': 'http://peterhudec.github.io/foundation-sphinx-theme/basic/html',
     'facebook_app_id': '245101572296049',
     'twitter_id': 'FoundationSphinx',
+    'author': 'Peter Hudec',
+    'author_link': 'http://peterhudec.com',
+    'google_plus_id': '117034840853387702598',
+    'copyright_year': '2013',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

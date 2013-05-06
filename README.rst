@@ -107,5 +107,16 @@ There are these theme options available:
 
 		# A Twitter ID used for the via mention of the Twitter button.
 		'twitter_id': 'FoundationSphinx',
+
+
+		# If "author" and "copyright_year" are set they will override the "copyright" setting.
+		# Author's name.
+		'author': 'Peter Hudec',
+		# Author's link.
+		'author_link': 'http://peterhudec.com',
+		# Year to be used in the copyright statement.
+		'copyright_year': '2013',
+		# Author's Google+ id. If set a G+ authorship link will be added.
+		'google_plus_id': '117034840853387702598',
 	}
 

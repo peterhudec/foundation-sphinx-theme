@@ -273,6 +273,18 @@
 		    {%- if show_copyright %}
 			    {%- if hasdoc('copyright') %}
 			        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+			    {%- elif theme_copyright_year and theme_author %}
+			    	&copy; Copyright {{ theme_copyright_year }},
+			    	{% if theme_author_link %}
+			    		<a href="{{ theme_author_link }}">{{ theme_author }}</a>
+			    	{%- else -%}
+			    		{{ theme_author }}
+			    	{%- endif -%}
+			    	{% if theme_google_plus_id %}
+			    		<a class="google-plus-badge" href="//plus.google.com/{{ theme_google_plus_id }}?rel=author" rel="author" style="text-decoration:none;">
+						<img src="//ssl.gstatic.com/images/icons/gplus-16.png" alt="Google+"/></a>
+			    	{%- endif -%}
+			    	.
 			    {%- else %}
 			        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
 			    {%- endif %}
