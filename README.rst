@@ -97,5 +97,15 @@ There are these theme options available:
 
 		# Use this as the base for Open Graph URLs without trailing slash.
 		'base_url': 'http://example.com',
+
+		# If true a bar with Facebook, Google+ and Twitter social buttons will be displayed
+		# underneath the header.
+		'social_buttons': True,
+
+		# ID of your Facebook app associated with the Facebook Like button.
+		'facebook_app_id': '123456789',
+
+		# A Twitter ID used for the via mention of the Twitter button.
+		'twitter_id': 'FoundationSphinx',
 	}
 

@@ -23,8 +23,8 @@
 	
 	<meta property="og:title" content="Search | Sphinx Foundation Theme Sample" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="/search.html" />
-	<meta property="og:image" content="/_static/" />
+	<meta property="og:url" content="http://peterhudec.github.io/foundation-sphinx-theme/basic/html/search.html" />
+	<meta property="og:image" content="http://peterhudec.github.io/foundation-sphinx-theme/basic/html/_static/" />
 	
 	
 	<meta property="og:description" content="Lorem ipsum dolor sit amet, magna offendit similique ne nec. Ex doming sanctus labores pro, est ne dico simul laboramus." />
@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
-    <link rel="stylesheet" href="_static/foundation/css/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/foundation/css/cards.css" type="text/css" />
     	
 	<script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -62,7 +62,16 @@
 
 
 
-<body><div id="root"><div class="contain-to-grid">
+<body>
+	
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=245101572296049";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script><div id="root"><div class="contain-to-grid">
 			<nav class="top-bar">
 				<ul class="title-area">
 					<li class="name">
@@ -128,6 +137,22 @@
 		        </div>
 		        
 		    </div>
+	    </div>
+	    
+	    <div class="social-buttons">
+	    	<ul>
+	    		<li>
+	    			<div class="fb-like" data-href="http://peterhudec.github.io/foundation-sphinx-theme/basic/html/search.html" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial"></div>
+	    		</li>
+	    		<li>
+	    			<div class="g-plusone" data-size="medium" data-href="http://peterhudec.github.io/foundation-sphinx-theme/basic/html/search.html"></div>
+	    		</li>
+	    		<li>
+	    			<a href="https://twitter.com/share" class="twitter-share-button" data-via="FoundationSphinx">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	    		</li>
+	    	</ul>
+	    	
 	    </div>
 		
 		
@@ -222,7 +247,15 @@
 		$('col').attr('width', null);
 		
 		// Add "returns" class to all returns elements
-		$(".field-name:contains('Returns:')").parent().addClass('returns')
+		$(".field-name:contains('Returns:')").parent().addClass('returns');
+		
+		
+		(function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+		
 		
 		
 		var _gaq = _gaq || [];

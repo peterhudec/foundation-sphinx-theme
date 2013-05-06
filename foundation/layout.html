@@ -149,6 +149,18 @@
 
 {% block html_body %}
 <body>
+	
+	{% if theme_social_buttons -%}
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId={{ theme_facebook_app_id }}";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	{%- endif %}
+	
 	{%- block root -%}
 	<div id="root">
 		{%- block nav_bar -%}
@@ -196,6 +208,23 @@
 		        	{{ logo() }}
 		        {% endif %}
 		    </div>
+	    </div>
+	    
+	    <div class="social-buttons">
+	    	{% if theme_social_buttons -%}
+	    	<ul>
+	    		<li>
+	    			<div class="fb-like" data-href="{{ pathto(theme_base_url + '/' + pagename, 1) }}.html" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial"></div>
+	    		</li>
+	    		<li>
+	    			<div class="g-plusone" data-size="medium" data-href="{{ pathto(theme_base_url + '/' + pagename, 1) }}.html"></div>
+	    		</li>
+	    		<li>
+	    			<a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ theme_twitter_id }}">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	    		</li>
+	    	</ul>
+	    	{% endif %}
 	    </div>
 		{% endblock %}
 		
@@ -283,7 +312,15 @@
 		$('col').attr('width', null);
 		
 		// Add "returns" class to all returns elements
-		$(".field-name:contains('Returns:')").parent().addClass('returns')
+		$(".field-name:contains('Returns:')").parent().addClass('returns');
+		
+		{% if theme_social_buttons %}
+		(function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+		{% endif %}
 		
 		{% if theme_google_analytics_id %}
 		var _gaq = _gaq || [];
