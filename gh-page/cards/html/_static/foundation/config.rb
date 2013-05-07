@@ -10,6 +10,12 @@ css_dir = "css"
 # sample project
 # css_dir = "../../../sample-project/build/html/_static/foundation/css"
 
+# gh-page basic
+# css_dir = "../../../gh-page/basic/html/_static/foundation/css"
+
+# gh-page cards
+# css_dir = "../../../gh-page/cards/html/_static/foundation/css"
+
 # Authomatic
 # css_dir = "../../../../authomatic/doc/build/html/_static/foundation/css"
 

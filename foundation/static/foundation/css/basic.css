@@ -5676,19 +5676,24 @@ dt, li {
   padding: 0.9375em;
 }
 
-/* line 104, ../sass/basic.sass */
+/* line 103, ../sass/basic.sass */
+#github-ribbon {
+  display: none;
+}
+
+/* line 106, ../sass/basic.sass */
 div.social-buttons {
   text-align: center;
   padding: 1.25em;
   margin-bottom: 2.5em;
 }
-/* line 108, ../sass/basic.sass */
+/* line 110, ../sass/basic.sass */
 div.social-buttons > ul {
   margin: 0em auto;
   line-height: 20px;
   display: inline;
 }
-/* line 112, ../sass/basic.sass */
+/* line 114, ../sass/basic.sass */
 div.social-buttons > ul > li {
   display: inline-block;
   list-style-type: none;
@@ -5699,89 +5704,89 @@ div.social-buttons > ul > li {
   text-align: left;
 }
 
-/* line 123, ../sass/basic.sass */
+/* line 125, ../sass/basic.sass */
 #content ul > li > ul, #content ul > li > ol {
   padding: 0em !important;
 }
-/* line 126, ../sass/basic.sass */
+/* line 128, ../sass/basic.sass */
 #content table {
   width: 100%;
 }
-/* line 129, ../sass/basic.sass */
+/* line 131, ../sass/basic.sass */
 #content table td, #content table th {
   padding-top: 0.75em !important;
   padding-bottom: 0.75em !important;
   word-break: break-all;
 }
-/* line 135, ../sass/basic.sass */
+/* line 137, ../sass/basic.sass */
 #content table.field-list th {
   width: 8em;
 }
-/* line 138, ../sass/basic.sass */
+/* line 140, ../sass/basic.sass */
 #content .section {
   margin-bottom: 2.5em;
 }
-/* line 141, ../sass/basic.sass */
+/* line 143, ../sass/basic.sass */
 #content pre, #content .highlight {
   background-color: #444444;
   color: #dddddd;
   letter-spacing: -0.1em;
   white-space: pre;
 }
-/* line 147, ../sass/basic.sass */
+/* line 149, ../sass/basic.sass */
 #content .returns > th {
   width: 6.25em;
 }
-/* line 150, ../sass/basic.sass */
+/* line 152, ../sass/basic.sass */
 #content .literal:not(.xref) {
   background-color: #e9e9e9;
 }
-/* line 153, ../sass/basic.sass */
+/* line 155, ../sass/basic.sass */
 #content .docutils.citation {
   margin: 0em;
 }
-/* line 155, ../sass/basic.sass */
+/* line 157, ../sass/basic.sass */
 #content .docutils.citation td, #content .docutils.citation th {
   display: table-cell;
 }
-/* line 158, ../sass/basic.sass */
+/* line 160, ../sass/basic.sass */
 #content .admonition {
   background-color: #f2f2f2;
   border: solid 1em #e6e6e6;
   margin-bottom: 1.25em;
 }
-/* line 162, ../sass/basic.sass */
+/* line 164, ../sass/basic.sass */
 #content .admonition .last {
   padding: 0em;
   margin-bottom: 0em;
 }
-/* line 166, ../sass/basic.sass */
+/* line 168, ../sass/basic.sass */
 #content .admonition.note, #content .admonition.hint {
   background-color: #fff6cc;
   border: solid 1px #ffe566;
 }
-/* line 170, ../sass/basic.sass */
+/* line 172, ../sass/basic.sass */
 #content .admonition.tip, #content .admonition.seealso {
   background-color: #d7fad1;
   border: solid 1px #9bf48b;
 }
-/* line 174, ../sass/basic.sass */
+/* line 176, ../sass/basic.sass */
 #content .admonition.important, #content .admonition.attention, #content .admonition.danger, #content .admonition.error, #content .admonition.warning {
   background-color: #ffe5e9;
   border: solid 1px #ffccd3;
 }
 
-/* line 178, ../sass/basic.sass */
+/* line 180, ../sass/basic.sass */
 #root {
   padding-bottom: 5em;
 }
 
-/* line 181, ../sass/basic.sass */
+/* line 183, ../sass/basic.sass */
 #footer {
   margin: 0em;
 }
 
-/* line 185, ../sass/basic.sass */
+/* line 187, ../sass/basic.sass */
 .google-plus-badge img {
   vertical-align: -3px;
   border: 0px;
@@ -5790,33 +5795,38 @@ div.social-buttons > ul > li {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 192, ../sass/basic.sass */
+  /* line 194, ../sass/basic.sass */
   dt, li {
     word-break: normal;
   }
 
-  /* line 195, ../sass/basic.sass */
+  /* line 197, ../sass/basic.sass */
+  #github-ribbon {
+    display: block;
+  }
+
+  /* line 200, ../sass/basic.sass */
   #header {
     text-align: left;
     padding-bottom: 2.5em;
   }
-  /* line 199, ../sass/basic.sass */
+  /* line 204, ../sass/basic.sass */
   #header #logo, #header #motto {
     font-weight: bold;
     margin: 0em;
   }
-  /* line 203, ../sass/basic.sass */
+  /* line 208, ../sass/basic.sass */
   #header #logo-container {
     margin-bottom: 0em;
   }
 
-  /* line 206, ../sass/basic.sass */
+  /* line 211, ../sass/basic.sass */
   .breadcrumbs {
     margin-left: 0em;
     margin-right: 0em;
   }
 
-  /* line 211, ../sass/basic.sass */
+  /* line 216, ../sass/basic.sass */
   #content table td, #content table th {
     word-break: normal;
     padding: 0.75em;

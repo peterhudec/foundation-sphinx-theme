@@ -345,6 +345,13 @@
 		})();
 		{% endif %}
 	</script>
+	{% if theme_github_id %}
+		<a id="github-ribbon" href="https://github.com/{{ theme_github_id }}">
+			<img style="position: absolute; top: 0; {{ theme_github_ribbon_position }}: 0; border: 0;"
+				 src="{{ theme_github_ribbon_image }}"
+				 alt="Fork me on GitHub">
+		</a>
+	{% endif %}
 </body>
 {% endblock %}
 </html>

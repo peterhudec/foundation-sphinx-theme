@@ -110,13 +110,31 @@ There are these theme options available:
 
 
 		# If "author" and "copyright_year" are set they will override the "copyright" setting.
+
 		# Author's name.
 		'author': 'Peter Hudec',
+
 		# Author's link.
 		'author_link': 'http://peterhudec.com',
+
 		# Year to be used in the copyright statement.
 		'copyright_year': '2013',
+
 		# Author's Google+ id. If set a G+ authorship link will be added.
 		'google_plus_id': '117034840853387702598',
+
+
+		# Fork me on GitHub ribbon:
+		# https://github.com/blog/273-github-ribbons
+		# Ribbons are hidden on small screens!
+
+		# Path to your GitHub project.
+		'github_id': 'peterhudec/foundation-sphinx-theme',
+
+		# Path to the ribbon image. 
+		'github_ribbon_image': '/_static/my-github-ribbon.png',
+
+		# Position of the ribbon "left" or "right".
+		'github_ribbon_position': 'right',
 	}
 
