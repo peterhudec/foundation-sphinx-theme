@@ -97,11 +97,11 @@ html_theme = 'foundation'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'stylesheet': 'foundation/css/cards.css',
+    'stylesheet': 'foundation/css/basic.css',
     'motto': 'Lorem ipsum dolor sit amet, magna offendit similique ne nec. Ex doming sanctus labores pro, est ne dico simul laboramus.',
     'google_analytics_id': 'UA-40554445-2',
     'social_buttons': True,
-    'base_url': 'http://peterhudec.github.io/foundation-sphinx-theme/cards/html',
+    'base_url': 'http://peterhudec.github.io/foundation-sphinx-theme/basic/html',
     'facebook_app_id': '245101572296049',
     'twitter_id': 'FoundationSphinx',
     'author': 'Peter Hudec',
@@ -109,6 +109,7 @@ html_theme_options = {
     'google_plus_id': '117034840853387702598',
     'copyright_year': '2013',
     'github_id': 'peterhudec/foundation-sphinx-theme',
+    'github_ribbon_image': 'github-ribbon.png',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

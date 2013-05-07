@@ -124,15 +124,15 @@ There are these theme options available:
 		'google_plus_id': '117034840853387702598',
 
 
-		# Fork me on GitHub ribbon:
+		# Fork me on GitHub ribbon will be displayed if both "github_id" and "github_ribbon_image" are set:
 		# https://github.com/blog/273-github-ribbons
 		# Ribbons are hidden on small screens!
 
 		# Path to your GitHub project.
 		'github_id': 'peterhudec/foundation-sphinx-theme',
 
-		# Path to the ribbon image. 
-		'github_ribbon_image': '/_static/my-github-ribbon.png',
+		# Path to the ribbon image relative to the "_static" directory.
+		'github_ribbon_image': 'my-github-ribbon.png',
 
 		# Position of the ribbon "left" or "right".
 		'github_ribbon_position': 'right',
