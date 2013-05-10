@@ -13,7 +13,7 @@ Features
 --------
 
 *	Responsive design
-*	Support for SVG in `<img/>` tags with fallback to PNG
+*	Support for SVG in ``<img/>`` tags with fallback to PNG
 *	Google Analytics support
 *	Fork Me On Github support
 *	SEO rudiments
@@ -21,7 +21,7 @@ Features
 	*	SEO meta tags
 	*	Open Graph meta tags
 	*	Facebbok, Twitter and Google+ social buttons
-	*	Google Rich Snippet Authorship
+	*	Authorship Google Rich Snippet
 
 Usage
 -----
