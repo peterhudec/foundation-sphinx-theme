@@ -110,6 +110,7 @@ html_theme_options = {
     'copyright_year': '2013',
     'github_id': 'peterhudec/foundation-sphinx-theme',
     'github_ribbon_image': 'github-ribbon.png',
+    'seo_description': 'This is an example of the Foundation Sphinx Theme output.'
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

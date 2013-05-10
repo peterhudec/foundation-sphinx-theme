@@ -6,6 +6,22 @@ Sphinx Foundation Theme
 =======================
 
 This is a Sphinx theme based on the |foundation|_ css framework.
+It was created as a by-product of the `Authomatic <http://peterhudec.github.io/authomatic>`_
+authentication / authorization library.
+
+Features
+--------
+
+*	Responsive design
+*	Support for SVG in `<img/>` tags with fallback to PNG
+*	Google Analytics support
+*	Fork Me On Github support
+*	SEO rudiments
+	
+	*	SEO meta tags
+	*	Open Graph meta tags
+	*	Facebbok, Twitter and Google+ social buttons
+	*	Google Rich Snippet Authorship
 
 Usage
 -----
@@ -94,6 +110,10 @@ There are these theme options available:
 		'meta_tags': {
 			'foo': 'bar', # will be rendered as <meta name="foo" content="bar">
 		},
+
+		# The value for "description" and "og:description" metatags.
+		# If omitted, the value of "motto" will be used.
+		'seo_description': 'This is an example of the Foundation Sphinx Theme output.',
 
 		# Use this as the base for Open Graph URLs without trailing slash.
 		'base_url': 'http://example.com',
