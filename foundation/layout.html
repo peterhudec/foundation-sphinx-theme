@@ -23,6 +23,22 @@
     {%- for scriptfile in script_files %}
     	<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
     {%- endfor %}
+    
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var s = document.createElement('script');
+    var t = document.getElementsByTagName('script')[0];
+
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//api.flattr.com/js/0.6/load.js?mode=auto';
+
+    t.parentNode.insertBefore(s, t);
+ })();
+/* ]]> */
+</script>
+    
 {%- endmacro %}
 
 {%- macro css() %}
@@ -223,6 +239,33 @@
 	    			<a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ theme_twitter_id }}">Tweet</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	    		</li>
+	    		{% if theme_github_user and theme_github_repo %}
+	    		<li>
+	    			<iframe src="http://ghbtns.com/github-btn.html?user={{ theme_github_user }}&repo={{ theme_github_repo }}&type=watch&count=true"
+  							allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+	    		</li>
+	    		{% endif %}
+	    		<li>
+	    			<script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+					<script type="IN/Share" data-counter="right"></script>
+	    		</li>
+	    		{% if theme_flattr_id %}
+	    		<li>
+	    			<a	class="FlattrButton"
+	    				href="http://peterhudec.github.io/foundation-sphinx-theme/cards/html"
+	    				data-flattr-uid="{{ theme_flattr_id }}"
+	    				data-flattr-category="software"
+	    				data-flattr-button="compact"
+	    				data-flattr-tags="{{ theme_flattr_tags }}"
+	    				data-flattr-description="{{ theme_flattr_description or theme_seo_description or theme_motto }}"
+	    				title="{{ theme_flattr_title or seo_title() }}"></a>
+	    		</li>
+	    		{% endif %}
+	    		<li class="reddit">
+	    			<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js">
+	    				reddit_newwindow='1';
+	    			</script>
+	    		</li>
 	    	</ul>
 	    	{% endif %}
 	    </div>
@@ -345,9 +388,11 @@
 		})();
 		{% endif %}
 	</script>
-	{% if theme_github_id and theme_github_ribbon_image %}
-		<a id="github-ribbon" href="https://github.com/{{ theme_github_id }}">
-			<img style="position: absolute; top: 0; {{ theme_github_ribbon_position }}: 0; border: 0;"
+	{% if theme_github_ribbon_image and theme_github_user and theme_github_repo %}
+		<a	id="github-ribbon"
+			style="{{ theme_github_ribbon_position }}: 0; border: 0;"
+			href="https://github.com/{{ theme_github_user }}/{{ theme_github_repo }}">
+			<img
 				 src="{{ pathto('_static/' + theme_github_ribbon_image, 1) }}"
 				 alt="Fork me on GitHub">
 		</a>

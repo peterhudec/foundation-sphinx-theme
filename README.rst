@@ -128,6 +128,12 @@ There are these theme options available:
 		# A Twitter ID used for the via mention of the Twitter button.
 		'twitter_id': 'FoundationSphinx',
 
+		# Flattr button settings.
+		'flattr_id': 'andypipkin', # Your Flattr ID
+		'flattr_title': '', # If missing docstitle or title will be used.
+		'flattr_description': '', # If missing seo_description or motto will be used.
+		'flattr_tags': '', # Optional.
+
 
 		# If "author" and "copyright_year" are set they will override the "copyright" setting.
 
@@ -144,12 +150,15 @@ There are these theme options available:
 		'google_plus_id': '117034840853387702598',
 
 
-		# Fork me on GitHub ribbon will be displayed if both "github_id" and "github_ribbon_image" are set:
+		# Fork me on GitHub ribbon will be displayed if "github_user", "github_repo" and "github_ribbon_image" are set:
 		# https://github.com/blog/273-github-ribbons
 		# Ribbons are hidden on small screens!
 
-		# Path to your GitHub project.
-		'github_id': 'peterhudec/foundation-sphinx-theme',
+		# Your GitHub ID.
+		'github_user': 'foundation-sphinx-theme',
+
+		# The repository slug.
+		'github_repo': 'foundation-sphinx-theme',
 
 		# Path to the ribbon image relative to the "_static" directory.
 		'github_ribbon_image': 'my-github-ribbon.png',

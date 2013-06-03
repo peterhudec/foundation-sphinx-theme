@@ -108,9 +108,11 @@ html_theme_options = {
     'author_link': 'http://peterhudec.com',
     'google_plus_id': '117034840853387702598',
     'copyright_year': '2013',
-    'github_id': 'peterhudec/foundation-sphinx-theme',
     'github_ribbon_image': 'github-ribbon.png',
-    'seo_description': 'This is an example of the Foundation Sphinx Theme output.'
+    'seo_description': 'This is an example of the Foundation Sphinx Theme output.',
+    'github_user': 'peterhudec',
+    'github_repo': 'foundation-sphinx-theme',
+    'flattr_id': 'peterhudec',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

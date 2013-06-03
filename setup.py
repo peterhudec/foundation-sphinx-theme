@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 
 setup(
     name='Foundation Sphinx Theme',
-    version='0.0.0',
+    version='0.0.1',
     packages=find_packages(),
     author='Peter Hudec',
     author_email='peterhudec@peterhudec.com',
