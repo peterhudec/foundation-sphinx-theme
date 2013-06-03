@@ -227,26 +227,33 @@ $breadcrumbs-fg: $color-1 !default
       background-color: $returns-value-bg
       color: $returns-value-fg
       vertical-align: middle
+      padding: $padding
 
-@mixin admonition()
+@mixin admonition($hbg: $admonition-1-header-bg, $hfg: $admonition-1-header-fg, $bbg: $admonition-1-body-bg, $bfg: $admonition-1-body-fg)
   background-color: transparent
   border: none
-  padding: 0em !important
+  padding: 0em 0em #{$padding} 0em !important
   border: 0em
+  background-color: $bbg
+  color: $bfg
+  @include top-corners($radius * 2)
+  @include bottom-corners()
+  margin-bottom: $margin
   
   // Header
   .first
     @include basic()
     @include top-corners()
-    background-color: $admonition-1-header-bg
-    color: $admonition-1-header-fg
+    background-color: $hbg
+    color: $hfg
     
   // Body
-  .last
+  &>*:not(:first-child)
     @include basic()
-    @include bottom-corners()
-    background-color: $admonition-1-body-bg
-    color: $admonition-1-body-fg
+    margin-top: 0em
+    margin-bottom: 0em
+    padding-top: $padding
+    padding-bottom: 0em
 
 @mixin triangle($angle: 0.5)
   pointer-events: none
@@ -599,39 +606,20 @@ ul.breadcrumbs
         border-bottom-left-radius: $radius 
   
   // Admonitions and sidebar
-  .admonition, .sidebar
-    @include admonition()
-    
-    &.sidebar
-      .first
-        background-color: $sidebar-header-bg
-        color: $sidebar-header-fg
-      .sidebar-subtitle
-        padding: #{$padding-v} #{$padding-h}
-        margin: 0em
-        background-color: $sidebar-subtitle-bg
-        color: $sidebar-subtitle-fg
-      .last
-        background-color: $sidebar-body-bg
-        color: $sidebar-body-fg
-    
+  .admonition
     &.note, &.hint
       @include admonition()
     
     &.tip, &.seealso
-      @include admonition()
-      .first
-        background-color: $admonition-2-header-bg
-        color: $admonition-2-header-fg
-      .last
-        background-color: $admonition-2-body-bg
-        color: $admonition-2-body-fg
-    
+      @include admonition($admonition-2-header-bg, $admonition-2-header-fg, $admonition-2-body-bg, $admonition-2-body-fg)
+
     &.attention, &.danger, &.error, &.warning, &.important
-      @include admonition()
-      .first
-        background-color: $admonition-3-header-bg
-        color: $admonition-3-header-fg
-      .last
-        background-color: $admonition-3-body-bg
-        color: $admonition-3-body-fg
+      @include admonition($admonition-3-header-bg, $admonition-3-header-fg, $admonition-3-body-bg, $admonition-3-body-fg)
+
+  .sidebar
+    @include admonition($sidebar-header-bg, $sidebar-header-fg, $sidebar-body-bg, $sidebar-body-fg)
+    .sidebar-subtitle
+      padding: #{$padding-v} #{$padding-h}
+      margin: 0em
+      background-color: $sidebar-subtitle-bg
+      color: $sidebar-subtitle-fg

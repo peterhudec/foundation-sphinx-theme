@@ -56,6 +56,21 @@
     	<script type="text/javascript" src="_static/underscore.js"></script>
     	<script type="text/javascript" src="_static/doctools.js"></script>
     	<script type="text/javascript" src="_static/foundation/js/vendor/custom.modernizr.js"></script>
+    
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var s = document.createElement('script');
+    var t = document.getElementsByTagName('script')[0];
+
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//api.flattr.com/js/0.6/load.js?mode=auto';
+
+    t.parentNode.insertBefore(s, t);
+ })();
+/* ]]> */
+</script>
 
 </head>
 
@@ -153,6 +168,33 @@
 	    			<a href="https://twitter.com/share" class="twitter-share-button" data-via="FoundationSphinx">Tweet</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	    		</li>
+	    		
+	    		<li>
+	    			<iframe src="http://ghbtns.com/github-btn.html?user=peterhudec&repo=foundation-sphinx-theme&type=watch&count=true"
+  							allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+	    		</li>
+	    		
+	    		<li>
+	    			<script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+					<script type="IN/Share" data-counter="right"></script>
+	    		</li>
+	    		
+	    		<li>
+	    			<a	class="FlattrButton"
+	    				href="http://peterhudec.github.io/foundation-sphinx-theme/cards/html"
+	    				data-flattr-uid="peterhudec"
+	    				data-flattr-category="software"
+	    				data-flattr-button="compact"
+	    				data-flattr-tags=""
+	    				data-flattr-description="This is an example of the Foundation Sphinx Theme output."
+	    				title="Reference | Sphinx Foundation Theme Sample"></a>
+	    		</li>
+	    		
+	    		<li class="reddit">
+	    			<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js">
+	    				reddit_newwindow='1';
+	    			</script>
+	    		</li>
 	    	</ul>
 	    	
 	    </div>
@@ -174,6 +216,19 @@ Ex doming sanctus labores pro, est ne dico simul laboramus.
 Eam ad sint accumsan percipitur, dicta ubique expetendis ne sed.
 Cu ipsum percipit electram sed. Per recusabo convenire definiebas an.
 Cu atomorum splendide nec, id qui suas urbanitas.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>The interface of the library has recently been changed from</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">authomatic</span>
+<span class="n">authomatic</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">CONFIG</span><span class="p">,</span> <span class="s">&#39;secret&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>to</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">authomatic</span> <span class="kn">import</span> <span class="n">Authomatic</span>
+<span class="n">authomatic</span> <span class="o">=</span> <span class="n">Authomatic</span><span class="p">(</span><span class="n">CONFIG</span><span class="p">,</span> <span class="s">&#39;secret&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
@@ -497,8 +552,10 @@ Ex doming sanctus labores pro, est ne dico simul laboramus.</p>
 		
 	</script>
 	
-		<a id="github-ribbon" href="https://github.com/peterhudec/foundation-sphinx-theme">
-			<img style="position: absolute; top: 0; right: 0; border: 0;"
+		<a	id="github-ribbon"
+			style="right: 0; border: 0;"
+			href="https://github.com/peterhudec/foundation-sphinx-theme">
+			<img
 				 src="_static/github-ribbon.png"
 				 alt="Fork me on GitHub">
 		</a>

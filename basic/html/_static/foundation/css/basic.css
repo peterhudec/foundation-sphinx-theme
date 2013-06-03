@@ -5698,9 +5698,9 @@ div.social-buttons > ul > li {
   display: inline-block;
   list-style-type: none;
   height: 20px;
-  width: 100px;
+  width: 120px;
   line-height: 20px;
-  padding: 0em;
+  padding: 0em 0em 1em 0em;
   text-align: left;
 }
 
@@ -5714,79 +5714,77 @@ div.social-buttons > ul > li {
 }
 /* line 131, ../sass/basic.sass */
 #content table td, #content table th {
-  padding-top: 0.75em !important;
-  padding-bottom: 0.75em !important;
   word-break: break-all;
 }
-/* line 137, ../sass/basic.sass */
+/* line 135, ../sass/basic.sass */
 #content table.field-list th {
   width: 8em;
 }
-/* line 140, ../sass/basic.sass */
+/* line 138, ../sass/basic.sass */
 #content .section {
   margin-bottom: 2.5em;
 }
-/* line 143, ../sass/basic.sass */
+/* line 141, ../sass/basic.sass */
 #content pre, #content .highlight {
   background-color: #444444;
   color: #dddddd;
   letter-spacing: -0.1em;
   white-space: pre;
 }
-/* line 149, ../sass/basic.sass */
+/* line 147, ../sass/basic.sass */
 #content .returns > th {
   width: 6.25em;
 }
-/* line 152, ../sass/basic.sass */
+/* line 150, ../sass/basic.sass */
 #content .literal:not(.xref) {
   background-color: #e9e9e9;
 }
-/* line 155, ../sass/basic.sass */
+/* line 153, ../sass/basic.sass */
 #content .docutils.citation {
   margin: 0em;
 }
-/* line 157, ../sass/basic.sass */
+/* line 155, ../sass/basic.sass */
 #content .docutils.citation td, #content .docutils.citation th {
   display: table-cell;
 }
-/* line 160, ../sass/basic.sass */
+/* line 158, ../sass/basic.sass */
 #content .admonition {
   background-color: #f2f2f2;
   border: solid 1em #e6e6e6;
   margin-bottom: 1.25em;
 }
-/* line 164, ../sass/basic.sass */
+/* line 162, ../sass/basic.sass */
 #content .admonition .last {
   padding: 0em;
   margin-bottom: 0em;
 }
-/* line 168, ../sass/basic.sass */
+/* line 166, ../sass/basic.sass */
 #content .admonition.note, #content .admonition.hint {
   background-color: #fff6cc;
   border: solid 1px #ffe566;
 }
-/* line 172, ../sass/basic.sass */
+/* line 170, ../sass/basic.sass */
 #content .admonition.tip, #content .admonition.seealso {
   background-color: #d7fad1;
   border: solid 1px #9bf48b;
 }
-/* line 176, ../sass/basic.sass */
+/* line 174, ../sass/basic.sass */
 #content .admonition.important, #content .admonition.attention, #content .admonition.danger, #content .admonition.error, #content .admonition.warning {
   background-color: #ffe5e9;
   border: solid 1px #ffccd3;
 }
 
-/* line 180, ../sass/basic.sass */
+/* line 178, ../sass/basic.sass */
 #root {
   padding-bottom: 5em;
 }
 
-/* line 183, ../sass/basic.sass */
+/* line 181, ../sass/basic.sass */
 #footer {
   margin: 0em;
 }
 
-/* line 187, ../sass/basic.sass */
+/* line 185, ../sass/basic.sass */
 .google-plus-badge img {
   vertical-align: -3px;
   border: 0px;
@@ -5795,14 +5793,16 @@ div.social-buttons > ul > li {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 194, ../sass/basic.sass */
+  /* line 192, ../sass/basic.sass */
   dt, li {
     word-break: normal;
   }
 
-  /* line 197, ../sass/basic.sass */
+  /* line 195, ../sass/basic.sass */
   #github-ribbon {
     display: block;
+    position: fixed;
+    top: 0px;
   }
 
   /* line 200, ../sass/basic.sass */

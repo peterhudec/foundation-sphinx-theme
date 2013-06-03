@@ -8,6 +8,23 @@ Eam ad sint accumsan percipitur, dicta ubique expetendis ne sed.
 Cu ipsum percipit electram sed. Per recusabo convenire definiebas an.
 Cu atomorum splendide nec, id qui suas urbanitas.
 
+.. note::
+   
+   The interface of the library has recently been changed from
+
+   .. code-block:: python
+
+      import authomatic
+      authomatic.setup(CONFIG, 'secret')
+
+   to
+
+   .. code-block:: python
+
+      from authomatic import Authomatic
+      authomatic = Authomatic(CONFIG, 'secret')
+
+
 Functions
 =========
 
@@ -115,6 +132,8 @@ Classes
          .. warning::
       
             Admonition inside method return comment.
+            
+
 
 .. class:: Bar
    
