@@ -57,6 +57,28 @@ There are two ready made styles.
 If you want to customize them or make your own,
 extend the ``sass`` sources in ``foundation/static/foundation/sass``.
 
+Page Specific SEO Description
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Use the ``..seo-description`` directive if you want to have different SEO description
+than the one specified in ``html_theme_options`` for a specific document/page.
+The directive can appear anywhere in the document.
+If you specify more than one, the content of the last one will be used.
+
+.. code-block:: rst
+	
+	.. seo-description::
+
+		Content of this directive overrides the seo_description
+		in the html_theme_options only for this page.
+
+	======================
+	Title of Your Document
+	======================
+
+	.. seo-description::
+	   
+	   Value of the last seo-description directive will be used.
 
 Options
 ^^^^^^^

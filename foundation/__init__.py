@@ -1,5 +1,26 @@
 import re
 
+from sphinx.util.compat import Directive
+
+# Storage for SEO descriptions.
+seo_descriptions = {}
+
+class SeoDescription(Directive):
+    """
+    This directive merely saves it's contents to the seo_descriptions dict
+    under the document name key.
+    """
+
+    # this enables content in the directive
+    has_content = True
+
+    def run(self):
+        # Save the last SEO description for a page.
+        seo_descriptions[self.state.document.settings.env.docname] = self.content[0]
+        # Must return a list of nodes.
+        return []
+
+
 def tt2nav(toctree, klass=None, appendix=None, divider=False):
     """
     Injects ``has-dropdown`` and ``dropdown`` classes to HTML
@@ -39,9 +60,13 @@ def tt2nav(toctree, klass=None, appendix=None, divider=False):
 def hpc(app, pagename, templatename, context, doctree):
     # Add the tt2nav() callable to Jinja2 template context.
     context['tt2nav'] = tt2nav
+    context['seo_description'] = seo_descriptions.get(pagename, '')
 
 
 def setup(app):
-    # Hook the event.
+    # Add directives.
+    app.add_directive('seo-description', SeoDescription)
+    
+    # Hook the events.
     app.connect('html-page-context', hpc)
     

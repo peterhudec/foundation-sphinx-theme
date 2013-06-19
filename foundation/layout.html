@@ -23,7 +23,7 @@
     {%- for scriptfile in script_files %}
     	<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
     {%- endfor %}
-    
+ 
 <script type="text/javascript">
 /* <![CDATA[ */
 (function() {
@@ -53,6 +53,10 @@
     <link rel="stylesheet" href="{{ pathto('_static/' + theme_stylesheet, 1) }}" type="text/css" />
 {%- endmacro %}
 
+{%- macro description() -%}
+    {{ (seo_description or theme_seo_description or theme_motto)|striptags|e }}
+{%- endmacro -%}
+
 {%- macro seo_tags() %}
 	{# Required Open Graph tags #}
 	<meta property="og:title" content="{{ seo_title() }}" />
@@ -61,7 +65,7 @@
 	<meta property="og:image" content="{{ pathto(theme_base_url + '/_static/' + theme_opengraph_image, 1) }}" />
 	
 	{# Optional Open Graph tags #}
-	<meta property="og:description" content="{{ theme_seo_description|striptags|e or theme_motto|striptags|e }}" />
+	<meta property="og:description" content="{{ description() }}" />
 	<meta property="og:site_name" content="{{ docstitle|striptags|e }}" />
 	
 	{% if theme_opengraph_tags is mapping %}
@@ -71,7 +75,7 @@
 	{% endif %}
     
     
-	<meta name="description" content="{{ theme_seo_description|striptags|e or theme_motto|striptags|e }}">
+	<meta name="description" content="{{ description() }}">
     {% if theme_meta_tags is mapping %}
 	    {%- for k, v in theme_meta_tags.items() %}
 	    	<meta name="{{ k }}" content="{{ v }}" />
@@ -165,7 +169,6 @@
 
 {% block html_body %}
 <body>
-	
 	{% if theme_social_buttons -%}
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {

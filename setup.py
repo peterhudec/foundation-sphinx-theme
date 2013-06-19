@@ -2,11 +2,11 @@ from setuptools import setup,find_packages
 
 setup(
     name='Foundation Sphinx Theme',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(),
+    package_data={'': ['*.txt', '*.rst']},
     author='Peter Hudec',
     author_email='peterhudec@peterhudec.com',
-    license='',
     description='',
     long_description=open('README.rst').read(),
     keywords=['sphinx', 'reStructuredText', 'theme', 'foundation'],

@@ -1,0 +1,7 @@
+setup.py
+Foundation_Sphinx_Theme.egg-info/PKG-INFO
+Foundation_Sphinx_Theme.egg-info/SOURCES.txt
+Foundation_Sphinx_Theme.egg-info/dependency_links.txt
+Foundation_Sphinx_Theme.egg-info/requires.txt
+Foundation_Sphinx_Theme.egg-info/top_level.txt
+foundation/__init__.py
