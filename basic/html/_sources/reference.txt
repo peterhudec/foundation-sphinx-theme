@@ -1,3 +1,13 @@
+.. seo-description::
+   
+   Content of this directive overrides the seo_description
+   in the html_theme_options only for this page.
+   But it will be overriden wit the next directive.
+
+.. seo-description::
+   
+   Value of the last seo-description directive will be used.
+
 =========
 Reference
 =========
@@ -7,22 +17,6 @@ Ex doming sanctus labores pro, est ne dico simul laboramus.
 Eam ad sint accumsan percipitur, dicta ubique expetendis ne sed.
 Cu ipsum percipit electram sed. Per recusabo convenire definiebas an.
 Cu atomorum splendide nec, id qui suas urbanitas.
-
-.. note::
-   
-   The interface of the library has recently been changed from
-
-   .. code-block:: python
-
-      import authomatic
-      authomatic.setup(CONFIG, 'secret')
-
-   to
-
-   .. code-block:: python
-
-      from authomatic import Authomatic
-      authomatic = Authomatic(CONFIG, 'secret')
 
 
 Functions
