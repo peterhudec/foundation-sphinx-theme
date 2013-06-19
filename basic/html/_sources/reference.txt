@@ -4,6 +4,7 @@
    in the html_theme_options only for this page.
    But it will be overriden wit the next directive.
 
+
 .. seo-description::
    
    Value of the last seo-description directive will be used.
