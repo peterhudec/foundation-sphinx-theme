@@ -16,7 +16,7 @@ class SeoDescription(Directive):
 
     def run(self):
         # Save the last SEO description for a page.
-        seo_descriptions[self.state.document.settings.env.docname] = self.content[0]
+        seo_descriptions[self.state.document.settings.env.docname] = ' '.join(self.content)
         # Must return a list of nodes.
         return []
 
