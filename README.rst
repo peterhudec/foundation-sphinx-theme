@@ -60,7 +60,7 @@ extend the ``sass`` sources in ``foundation/static/foundation/sass``.
 Page Specific SEO Description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Use the ``..seo-description`` directive if you want to have different SEO description
+Use the ``..seo-description::`` directive if you want to have different SEO description
 than the one specified in ``html_theme_options`` for a specific document/page.
 The directive can appear anywhere in the document.
 If you specify more than one, the content of the last one will be used.
