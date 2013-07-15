@@ -67,6 +67,7 @@ Classes
    
       Admonition inside class docstring.
    
+
    .. py:attribute:: bar
       
       Ex doming sanctus labores pro, est ne dico simul laboramus.
@@ -74,6 +75,9 @@ Classes
       .. note::
    
          Admonition inside attribute comment.
+      
+            Blockquoute text inside admonition
+      
    
    .. py:attribute:: baz
       

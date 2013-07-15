@@ -4,7 +4,6 @@
    in the html_theme_options only for this page.
    But it will be overriden wit the next directive.
 
-
 .. seo-description::
    
    Value of the last seo-description directive will be used.
@@ -68,6 +67,7 @@ Classes
    
       Admonition inside class docstring.
    
+
    .. py:attribute:: bar
       
       Ex doming sanctus labores pro, est ne dico simul laboramus.
@@ -75,6 +75,9 @@ Classes
       .. note::
    
          Admonition inside attribute comment.
+      
+            Blockquoute text inside admonition
+      
    
    .. py:attribute:: baz
       
