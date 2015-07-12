@@ -16,6 +16,7 @@ Features
 *	Support for SVG in ``<img/>`` tags with fallback to PNG
 *	Google Analytics support
 *	Fork Me On Github support
+*   **pip** installable
 *	SEO rudiments
 	
 	*	SEO meta tags
@@ -26,14 +27,25 @@ Features
 Usage
 -----
 
+Istall with pip.
+
+.. code-block:: bash
+
+	$ pip install foundation-sphinx-theme
+
 Set the ``html_theme`` variable to ``'foundation'``.
 
 .. code-block:: python
 	
 	# conf.py
+	import foundation_sphinx_theme
 
-	html_theme_path = ['_themes/foundation-sphinx-theme']
-	html_theme = 'foundation'
+	# The theme to use for HTML and HTML Help pages.  See the documentation for
+	# a list of builtin themes.
+	html_theme = 'foundation_sphinx_theme'
+
+	# Add any paths that contain custom themes here, relative to this directory.
+	html_theme_path = foundation_sphinx_theme.HTML_THEME_PATH
 
 You also need to add the ``foundation`` extension in the ``conf.py``.
 The extension just injects some foundation |foundation|_ css classes
@@ -44,7 +56,7 @@ needed for creation of the top bar navigation.
 	# conf.py
 
 	sys.path[0:0] = [os.path.abspath('_themes/foundation-sphinx-theme')]
-	extensions = ['sphinx.ext.autodoc', 'foundation']
+	extensions = ['sphinx.ext.autodoc', 'foundation_sphinx_theme']
 
 Styles
 ^^^^^^
