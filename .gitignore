@@ -11,3 +11,5 @@ doctrees
 gh-page/
 .idea/
 e/
+Foundation_Sphinx_Theme.egg-info/
+dist/
