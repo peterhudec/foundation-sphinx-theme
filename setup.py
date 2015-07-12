@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Foundation Sphinx Theme',
+    name='foundation-sphinx-theme',
     version='0.0.3',
     packages=find_packages(),
     package_data={'': ['*.txt', '*.rst', '*.html', '*.css', '*.js', '*.conf']},
