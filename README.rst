@@ -200,4 +200,14 @@ There are these theme options available:
 		# Position of the ribbon "left" or "right".
 		'github_ribbon_position': 'right',
 	}
+	
+Stylesheets Compilation
+-----------------------
+
+.. code-block:: bash
+	
+	$ gem install sass -v 3.2.10
+	$ gem install compass -v 0.12.2
+	$ gem install zurb-foundation -v 4.0.9
+	$ compass compile ./foundation_sphinx_theme/static/foundation
 
