@@ -1,7 +1,7 @@
 import os
 import re
 
-from sphinx.util.compat import Directive
+from docutils.parsers.rst import Directive
 
 
 HTML_THEME_PATH = [os.path.abspath(os.path.join(os.path.dirname(__file__),
